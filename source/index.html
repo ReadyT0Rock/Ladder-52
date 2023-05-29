@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Лесенка 52</title>
+  <link rel='preload' href='fonts/Montserrat-400.woff2' type='type/woff2' as='font' crossorigin='anonymous'>
+  <link rel='preload' href='fonts/Montserrat-500.woff2' type='type/woff2' as='font' crossorigin='anonymous'>
+  <link rel='preload' href='fonts/Montserrat-600.woff2' type='type/woff2' as='font' crossorigin='anonymous'>
+  <link rel='preload' href='fonts/Montserrat-700.woff2' type='type/woff2' as='font' crossorigin='anonymous'>
+  <link rel='icon' href='favicon.ico'>
+  <link rel='icon' href='img/favicons/favicon.png' type='image/png' sizes='32x32'>
+  <link rel='apple-touch-icon' href='img/favicons/favicon-apple.png'>
+  <link rel='manifest' href='manifest.webmanifest'>
+  <link rel='stylesheet' href='css/style.css'>
+</head>
+
+<body>
+
+  <header class='header'>
+    <div class='header__container'>
+      <div class='header__wrapper-logo'>
+        <a class='header__logo'>
+          <img class='header__img' src='img/logo-header.svg' width='125' height='50' alt='Логотип сайта Лесенка 52'>
+        </a>
+        <p class='header__logo-text'>Проектирование Изготовление Монтаж</p>
+      </div>
+      <div class='header__wrapper-navigation'>
+        <button class='header__burger header__burger--nojs header__burger--close' type='button'>
+          <span class='visually-hidden'>открыть меню</span>
+          <span class='header__burger-decorate'></span>
+          <span class='header__burger-decorate'></span>
+          <span class='header__burger-decorate'></span>
+        </button>
+        <nav class='navigation navigation--nojs navigation--close'>
+          <ul class='navigation__list'>
+            <li class='navigation__item'>
+              <a class='navigation__link' href='#'>О компании</a>
+            </li>
+            <li class='navigation__item'>
+              <a class='navigation__link' href='#'>Каталог</a>
+            </li>
+            <li class='navigation__item'>
+              <a class='navigation__link' href='#'>Примеры работ</a>
+            </li>
+            <li class='navigation__item'>
+              <a class='navigation__link' href='#'>Блог</a>
+            </li>
+            <li class='navigation__item'>
+              <a class='navigation__link' href='#'>Контакты</a>
+            </li>
+            <li class='navigation__item navigation__item--none'>
+              <a class='navigation__link navigation__link--contact-number' href='tel:+79302935065'>+7 (930) 293-50-65</a>
+              <button class='navigation-button btn-main-style' type='button'>Перезвоните мне!</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class='main'>
+
+    <section class='promo'>
+      <div class='promo__container'>
+      <ul class='promo__list'>
+        <li class='promo__item'>
+          <img class='promo__img' src='img/index/promo/slider-photo-1.jpg' srcset='img/index/promo/slider-photo-1@2x.jpg 2x' width='420' height='260' alt=''>
+        </li>
+        <li class='promo__item'>
+          <img class='promo__img' src='img/index/promo/slider-photo-2.jpg' srcset='img/index/promo/slider-photo-2@2x.jpg 2x' width='420' height='260' alt=''>
+        </li>
+        <li class='promo__item'>
+          <img class='promo__img' src='img/index/promo/slider-photo-3.jpg' srcset='img/index/promo/slider-photo-3@2x.jpg 2x' width='420' height='260' alt=''>
+        </li>
+      </ul>
+      <div class='promo__content'>
+        <span class='promo__text'>Всего <b>за 10 дней</b>> с гарантией <b>30 лет</b>></span>
+        <h1 class='promo__title'>Монолитные лестницы «под ключ»</h1>
+        <p class='promo__description'>Исполним все ваши мечты о современной и красивой лестнице по минимальной цене, но с максимальным качеством!</p>
+        <a class='promo__link btn-main-style' href='#'>Консультация</a>
+      </div>
+      <div class='promo__wrapper-calculate'>
+        <span class='promo__text-calculate'>Рассчитайте стоимость вашей лестницы <b>в 3 шага</b></span>
+        <a class='promo__link-calculate' href='#'>Подробнее</a>
+      </div>
+    </div>
+    </section>
+
+    <section class='advantages'>
+      <div class='advantages__container'>
+        <h2 class='visually-hidden'>Преимущества</h2>
+        <ul class='advantages__list'>
+          <li class='advantages__item'>
+            <h3 class='advantages__title'>Работаем без посредников</h3>
+            <p class='advantages__description'>Изготовление и монтаж осуществляют только наши мастера с опытом работы более Х-ти лет.</p>
+          </li>
+          <li class='advantages__item'>
+            <h3 class='advantages__title'>Фиксированные цены</h3>
+            <p class='advantages__description'>После согласования сметы все цены фиксируются в договоре и не изменяются в процессе.</p>
+          </li>
+          <li class='advantages__item'>
+            <h3 class='advantages__title'>Любые варианты отделки</h3>
+            <p class='advantages__description'>Любые материалы отделки готовых лестниц — от дерева и камня до кованых элементов и стекла.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class='type-ladder'>
+      <div class='type-ladder__container'>
+        <div class='type-ladder__top'>
+          <h2 class='type-ladder__title'>Типы лестниц</h2>
+          <div class='type-ladder__wrapper-btn'>
+            <button class='type-ladder__btn' type='button'>
+              <span class='visually-hidden'>показать предыдущие типы лестниц</span>
+            </button>
+            <button class='type-ladder__btn' type='button'>
+              <span class='visually-hidden'>показать следующие типы лестниц</span>
+            </button>
+          </div>
+        </div>
+        <ul class='type-ladder__list'>
+          <li class='type-ladder__item'>
+            <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-1.jpg' srcset='img/index/type-ladder/slider-img-1@x.jpg 2x' alt='прямая лестница'>
+            <div class='type-ladder__description'>
+              <h3 class='type-ladder__subtitle'>Прямая лестница</h3>
+              <p class='type-ladder__price'>от <b>18 000</b> ₽ за м. п.</p>
+              <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
+            </div>
+          </li>
+          <li class='type-ladder__item'>
+            <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-2.jpg' srcset='img/index/type-ladder/slider-img-2@2x.jpg 2x' alt='Забежная лестница'>
+            <div class='type-ladder__description'>
+              <h3 class='type-ladder__subtitle'>Забежная лестница</h3>
+              <p class='type-ladder__price'>от <b>27 000</b> ₽ за м. п.</p>
+              <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
+            </div>
+          </li>
+          <li class='type-ladder__item'>
+            <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-3.jpg' srcset='img/index/type-ladder/slider-img-3@2x.jpg 2x' alt='Винтовая лестница'>
+            <div class='type-ladder__description'>
+              <h3 class='type-ladder__subtitle'>Винтовая лестница</h3>
+              <p class='type-ladder__price'>от <b>30 000</b> ₽ за м. п.</p>
+              <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
+            </div>
+          </li>
+          <li class='type-ladder__item'>
+            <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-4.jpg' srcset='img/index/type-ladder/slider-img-4@2x.jpg 2x' alt='Фасадная лестница'>
+            <div class='type-ladder__description'>
+              <h3 class='type-ladder__subtitle'>Фасадная лестница</h3>
+              <p class='type-ladder__price'>от <b>50 000</b> ₽ за м. п.</p>
+              <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
+            </div>
+          </li>
+          <li class='type-ladder__item'>
+            <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-5.jpg' srcset='img/index/type-ladder/slider-img-5@2x.jpg 2x' alt='Зеркальная лестница'>
+            <div class='type-ladder__description'>
+              <h3 class='type-ladder__subtitle'>Зеркальная лестница</h3>
+              <p class='type-ladder__price'>от <b>45 000</b> ₽ за м. п.</p>
+              <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
+            </div>
+          </li>
+          <li class='type-ladder__item'>
+            <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-6.jpg' srcset='img/index/type-ladder/slider-img-6@2x.jpg 2x' alt='Индивидуальная лестница'>
+            <div class='type-ladder__description'>
+              <h3 class='type-ladder__subtitle'>Индивидуальная</h3>
+              <p class='type-ladder__price'>Цена договорная</p>
+              <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
+            </div>
+          </li>
+        </ul>
+        <ol class='slider-pagination'>
+          <li class='slider-pagination__item'>
+            <button class='slider-pagination__btn' type='button'>
+              <span class='visually-hidden'>1 фото</span>
+            </button>
+          </li>
+          <li class='slider-pagination__item'>
+            <button class='slider-pagination__btn' type='button'>
+              <span class='visually-hidden'>2 фото</span>
+            </button>
+          </li>
+          <li class='slider-pagination__item'>
+            <button class='slider-pagination__btn' type='button'>
+              <span class='visually-hidden'>3 фото</span>
+            </button>
+          </li>
+          <li class='slider-pagination__item'>
+            <button class='slider-pagination__btn' type='button'>
+              <span class='visually-hidden'>4 фото</span>
+            </button>
+          </li>
+          <li class='slider-pagination__item'>
+            <button class='slider-pagination__btn' type='button'>
+              <span class='visually-hidden'>5 фото</span>
+            </button>
+          </li>
+          <li class='slider-pagination__item'>
+            <button class='slider-pagination__btn' type='button'>
+              <span class='visually-hidden'>6 фото</span>
+            </button>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class='3d'>
+      <div class='3d__container'>
+        <h2 class='3d__title'>Получите 3d-визуализацию вашей будущей лестницы бесплатно!</h2>
+        <p class='3d__description'>Оставьте свои контактные данные и наш специалист свяжется свами в течении 15 минут!</p>
+        <form class='3d__form' action='#' method='post'>
+          <label class='visually-hidden' for='name'>ваше имя</label>
+          <input type='text' id='name' name='name' placeholder='Ваше имя...' required>
+          <label class='visually-hidden' for='phone'>ваш номер телефона</label>
+          <input type='tel' id='phone' name='phone' placeholder='Ваш телефон...' required>
+          <label class='visually-hidden' for='email'>ваша почта</label>
+          <input type='email' id='email' name='email' placeholder='Ваш e-mail...' required>
+          <button class='3d__btn btn-main-style' type='submit'>Отправить заявку</button>
+          <strong class='3d__footnote'>Нажимая на кнопку вы соглашаетесь  с <a href='#'>политикой конфиденциальности</a></strong>
+        </form>
+      </div>
+    </section>
+
+    <section class='about-us'>
+      <div class='about-us__container'>
+        <h2 class='about-us__title'>Почему стоит обратиться к нам</h2>
+        <div>
+        <b class='about-us__motto'>Мы воплощаем ваши идеи в реальность</b>
+        <p class='about-us__text'>Популярность монолитных лестничных систем
+          из железобетона в современном строительстве очень высока. Когда решите заказать эксклюзивную бетонную лестницу, главное — не ошибиться
+          с выбором ее изготовителя. Отдав предпочтение компании «Лесенка 52», вы найдете в нашем лице надежного партнера, с отличной репутацией,
+          предлагающего лучшие в регионе качество
+          и расценки.</p>
+        <p class='about-us__text'>
+          Популярность монолитных лестничных систем
+          из железобетона в современном строительстве очень высока. </p>
+        </div>
+        <div>
+          <h3 class='about-us__subtitle'>Наша специализация:</h3>
+          <ul class='about-us__list'>
+            <li class='about-us__item'>
+              <p class='about-us__specialization'>Проектирование</p>
+            </li>
+            <li class='about-us__item'>
+              <p class='about-us__specialization'>Изготовление</p>
+            </li>
+            <li class='about-us__item'>
+              <p class='about-us__specialization'>Монтаж и отделка</p>
+            </li>
+          </ul>
+        </div>
+        <img class='about-us__img' src='#' width='380' height='384' alt='винтовая лестница с коричневыми ступенями и белыми вставками'>
+      </div>
+    </section>
+
+    <section class='examples'>
+      <div class='examples__container'>
+        <div class='examples__left-column'>
+          <h2 class='examples__title'>Примеры наших работ</h2>
+          <p class='examples__description'>Прямая лестница в новом доме, г. Нижний Новгород</p>
+          <dl>
+            <dt>Тип помещения:</dt>
+            <dd>частный дом</dd>
+            <dt>Высота от пола до потолка:</dt>
+            <dd>3,1 м</dd>
+            <dt>Количество ступеней:</dt>
+            <dd>18 шт.</dd>
+            <dt>Количество подъемов:</dt>
+            <dd>20 шт.</dd>
+            <dt>Срок изготовления:</dt>
+            <dd>17 дней</dd>
+          </dl>
+          <span class='examples__price'>cтоимость <b>75 000</b> ₽</span>
+          <a class='examples__link btn-main-style' href=''>Хочу такую лестницу</a>
+        </div>
+        <div class='examples__right-column'>
+          <ul class='examples__list'>
+            <li class='examples__item'>
+              <img class='examples__img' src='img/index/examples/slider-photo-1.jpg' srcset='img/index/examples/slider-photo-1@x.jpg 2x' width='380' height='537' alt=''></li>
+            <li class='examples__item'>
+              <img class='examples__img' src='img/index/examples/slider-photo-2.jpg' srcset='img/index/examples/slider-photo-2@x.jpg 2x' width='380' height='537' alt=''></li>
+            <li class='examples__item'>
+              <img class='examples__img' src='img/index/examples/slider-photo-3.jpg' srcset='img/index/examples/slider-photo-3@x.jpg 2x' width='380' height='537' alt=''></li>
+          </ul>
+          <div class='examples__wrapper-btn'>
+            <button class='examples__btn' type='button'>
+              <span class='visually-hidden'>предыдущее фото</span>
+            </button>
+            <button class='examples__btn' type='button'>
+              <span class='visually-hidden'>следующее фото</span>
+            </button>
+          </div>
+          <ol class='slider-pagination'>
+            <li class='slider-pagination__item'>
+              <button class='slider-pagination__btn' type='button'>
+                <span class='visually-hidden'>1 фото</span>
+              </button>
+            </li>
+            <li class='slider-pagination__item'>
+              <button class='slider-pagination__btn' type='button'>
+                <span class='visually-hidden'>2 фото</span>
+              </button>
+            </li>
+            <li class='slider-pagination__item'>
+              <button class='slider-pagination__btn' type='button'>
+                <span class='visually-hidden'>3 фото</span>
+              </button>
+            </li>
+            <li class='slider-pagination__item'>
+              <button class='slider-pagination__btn' type='button'>
+                <span class='visually-hidden'>4 фото</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class='monolithic'>
+      <div class='monolithic__container'>
+        <h2 class='monolithic__title'>Преимущества монолитных лестниц</h2>
+        <picture>
+          <source media='(min-width: 1440px)' srcset='img/index/monolithic/stairs-desktop.jpg 1x, img/index/monolithic/stairs-desktop@2x.jpg 2x'>
+          <img class='monilithic__img' src='img/index/monolithic/stairs-mobile.jpg' srcset='img/index/monolithic/stairs-mobile@2x.jpg 2x' width='431' height='470' alt='монолитная прямая лестница изображение в профиль'>
+        </picture>
+        <ul class='monolithic__list'>
+          <li class='monolithic__item'>
+            <h3 class='monolithic__title'>Долговечность и надежность</h3>
+            <p class='monolithic__description'>Монолитные лестницы из бетона выдерживают большую нагрузку — 800–1000 кг/см2. Срок службы бетона — 100 и более лет.</p>
+          </li>
+          <li class='monolithic__item'>
+            <h3 class='monolithic__title'>Разнообразие форм, конфигураций и стилей</h3>
+            <p class='monolithic__description'>Большой выбор форм лестниц поможет вашему дому выделиться и приобрести уникальность.</p>
+          </li>
+          <li class='monolithic__item'>
+            <h3 class='monolithic__title'>Низкий уровень шума и вибраций</h3>
+            <p class='monolithic__description'>При ходьбе или беге по ним не передаются колебания на несущие конструкции и глушатся шумы.</p>
+          </li>
+          <li class='monolithic__item'>
+            <h3 class='monolithic__title'>Отсутствие опор в конструкции</h3>
+            <p class='monolithic__description'>Существенно сохраняет свободное пространство, сокращает количество материалов для изготовления лестницы.
+            </p>
+          </li>
+          <li class='monolithic__item'>
+            <h3 class='monolithic__title'>Возможность отделки любыми материалами</h3>
+            <p class='monolithic__description'>Дерево, керамическая плитка, клинкерная плитка, кованые элементы, ковролин, ламинат, натуральный камень, стекло.</p>
+          </li>
+          <li class='monolithic__item'>
+            <h3 class='monolithic__title'>Пожаробезопасность, огнестойкость</h3>
+            <p class='monolithic__description'>Бетон, из которого изготавливаются монолитные бетонные лестницы не горючий, огнеупорный материал.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class='order'>
+      <div class='order__container'>
+        <h2 class='order__title'>Как мы работаем?</h2>
+        <ol class='order__list'>
+          <li class='order__item'>
+            <span>01</span>
+            <h3 class='order__subtitle'>Ваша заявка на замер</h3>
+            <p class='order__description'>Позвоните нам или заполните форму обратной связи заказа на сайте.</p>
+          </li>
+          <li class='order__item'>
+            <span>02</span>
+            <h3 class='order__subtitle'>Замер и проектирование</h3>
+            <p class='order__description'>Замер и проектирование</p>
+          </li>
+          <li class='order__item'>
+            <span>03</span>
+            <h3 class='order__subtitle'>Оформление договора</h3>
+            <p class='order__description'>Просчитываем смету, готовим договор. После согласования подписываем договор.</p>
+          </li>
+          <li class='order__item'>
+            <span>04</span>
+            <h3 class='order__subtitle'>Выполнение работ</h3>
+            <p class='order__description'>Выполняем комплекс работ, качественно и в установленные договором сроки.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class='question'>
+      <div class='question__container'>
+        <div class='question__wrapper-map'>
+          <img src='img/index/question/map.jpg' srcset='img/index/question/map@2x.jpg 2x' width='725' height='560' alt='г. Нижний Новгород ул. Интернациональная, 100'>
+          <iframe class='question__map' src="https://yandex.ru/map-widget/v1/?ll=43.948862%2C56.309831&mode=whatshere&whatshere%5Bpoint%5D=43.948351%2C56.310043&whatshere%5Bzoom%5D=17&z=16.4" width="725" height="560" allowfullscreen="" style="position:relative;"></iframe>
+        </div>
+        <div>
+          <h2 class='question__title'>У вас остались вопросы?</h2>
+          <form class='question__form' action='#' method='post'>
+            <p class='question__text'>Не нашли нужной информации? Интересует что-то конкретное? Напишите нам и наши специалисты ответят вам в течении 30 минут!</p>
+            <label class='visually-hidden' for='first-name'>ваше имя</label>
+            <input type='text' id='first-name' name='name' placeholder='Ваше имя...' required>
+            <label class='visually-hidden' for='tel'>ваш номер телефона</label>
+            <input type='tel' id='tel' name='phone' placeholder='Ваш телефон...' required>
+            <label class='visually-hidden' for='question'>ваша почта</label>
+            <textarea id='question' name='question' placeholder='Ваш вопрос...'></textarea>
+            <button class='question__btn btn-main-style' type='submit'>Отправить сообщение</button>
+            <strong class='question__footnote'>Нажимая на кнопку вы соглашаетесь с <a href='#'>политикой конфиденциальности</a></strong>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class='footer'>
+    <div class='footer__container'>
+      <div class='footer__top'>
+        <div class='footer__column-left'>
+          <div class='footer__wrapper-logo'>
+            <a class='footer__logo'>
+              <img class='footer__img' src='img/logo-footer.svg' width='125' height='50' alt='Логотип сайта Лесенка 52'>
+            </a>
+            <p class='footer__logo-text'>Проектирование Изготовление Монтаж</p>
+          </div>
+          <span>Монолитные лестницы</span>
+        </div>
+        <div class='footer__column__center'>
+          <ul class='footer__navigation-list'>
+            <li class='footer__navigation-item'>
+              <a class='footer__navigation-link' href='#'>О компании</a>
+            </li>
+            <li class='footer__navigation-item'>
+              <a class='footer__navigation-link' href='#'>Каталог</a>
+            </li>
+            <li class='footer__navigation-item'>
+              <a class='footer__navigation-link' href='#'>Блог</a>
+            </li>
+          </ul>
+          <ul class='footer__navigation-list'>
+            <li class='footer__navigation-item'>
+              <a class='footer__navigation-link' href='#'>Примеры работ</a>
+            </li>
+            <li class='footer__navigation-item'>
+              <a class='footer__navigation-link' href='#'>Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class='footer__column__right'>
+          <a class='footer__phone footer_phone--contact-number' href='tel:+79302835065'>+7 (930) 283-50-65</a>
+          <button class='footer__btn btn-main-style' type='button'>Перезвоните мне!</button>
+        </div>
+      </div>
+      <div class='footer__bottom'>
+        <p class='footer__copyright'>© 2020 Все права защищены.</p>
+        <a class='footer__link-privacy' href='#'>Политика конфиденциальности</a>
+        <ul class='social'>
+          <li class='social__item'>
+            <a class='social__link' href='https://www.vk.com/Ladder-52' aria-label='Мы в контакте'>
+              <svg class='social__icon' width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22 3.64766C22 1.70984 20.2902 0 18.3523 0H3.64766C1.70984 0 0 1.70984 0 3.64766V18.3523C0 20.2901 1.70984 22 3.64766 22H18.3523C20.2902 22 22 20.2901 22 18.3523V3.64766ZM18.8195 14.0137C18.8355 14.0291 18.8514 14.0445 18.8514 14.0753C18.8514 14.137 18.8514 14.1986 18.9787 14.3219V14.5685C18.9787 14.6918 18.915 14.7534 18.7877 14.8151C18.6604 14.8767 18.4694 14.9384 18.2784 14.9384L16.114 15H16.1139C15.9866 15 15.8593 15 15.6684 14.9384C15.4774 14.8767 15.3501 14.8151 15.2227 14.7534L15.0318 14.6301C14.9045 14.5685 14.7135 14.3836 14.4589 14.1371L14.4588 14.137L14.4586 14.1367C14.2041 13.8903 14.0132 13.7054 13.8859 13.5205C13.7586 13.3356 13.5676 13.1507 13.3766 13.0274C13.2493 12.9041 13.0583 12.8425 12.931 12.9041H12.8673L12.74 13.0274C12.6763 13.089 12.6127 13.1507 12.549 13.274C12.5133 13.3432 12.4976 13.4125 12.4795 13.4926C12.4653 13.5552 12.4496 13.6244 12.4217 13.7055C12.358 13.8904 12.358 14.0753 12.358 14.3219V14.5685C12.358 14.5993 12.3421 14.6147 12.3262 14.6301C12.3103 14.6455 12.2944 14.661 12.2944 14.6918L12.2307 14.7534C12.1034 14.8767 11.9761 14.9384 11.7851 14.9384H10.8302C10.4482 15 10.0663 14.9384 9.62066 14.8151C9.2387 14.6918 8.85673 14.5685 8.53843 14.3836L8.53833 14.3835C8.22006 14.1986 7.90181 14.0137 7.64719 13.8288C7.39255 13.6438 7.20158 13.4589 7.07426 13.3356L6.88326 13.1507L6.62863 12.9041C6.56497 12.7808 6.37399 12.5343 6.05569 12.1644C5.85702 11.9335 5.68315 11.6787 5.50313 11.4148C5.39472 11.2559 5.28408 11.0937 5.16445 10.9315C5.08736 10.8009 4.9986 10.6533 4.9017 10.4922C4.67854 10.1211 4.41221 9.67828 4.14589 9.20548C3.76392 8.46575 3.38197 7.72602 3.06366 6.9863C3 6.86301 3 6.80137 3 6.73973V6.61644L3.06366 6.55479C3.12732 6.49315 3.25464 6.43151 3.50928 6.43151H5.80105C5.83288 6.43151 5.86471 6.44692 5.89654 6.46233C5.92837 6.47774 5.96019 6.49315 5.99202 6.49315C6.05569 6.49315 6.11935 6.55479 6.11935 6.55479H6.18302C6.24668 6.61644 6.31033 6.67808 6.37399 6.80137C6.43765 6.95548 6.50131 7.09418 6.56497 7.23288C6.62863 7.37157 6.6923 7.51027 6.75595 7.66438C6.88327 7.9726 7.01059 8.21918 7.07426 8.34247L7.20156 8.58904C7.28857 8.8418 7.40531 9.03698 7.51115 9.21393C7.56018 9.29591 7.60688 9.37398 7.64719 9.45205C7.77451 9.69863 7.90184 9.88356 8.02916 10.0069C8.09282 10.1301 8.22014 10.2534 8.34746 10.3151C8.41112 10.3767 8.53843 10.4384 8.6021 10.4384C8.67668 10.4384 8.72942 10.4172 8.77311 10.3997C8.804 10.3873 8.83036 10.3767 8.85673 10.3767C8.92039 10.3767 8.92039 10.3151 8.92039 10.3151C8.96541 10.3151 8.9786 10.2842 9.00497 10.2226C9.0159 10.1971 9.02908 10.1662 9.04773 10.1301C9.11139 10.0685 9.17503 9.9452 9.17503 9.76027C9.17503 9.67955 9.18716 9.59883 9.20084 9.50786C9.21848 9.39041 9.2387 9.25588 9.2387 9.08219V8.09589C9.2387 7.84931 9.23869 7.66438 9.17503 7.47945C9.15071 7.40881 9.13569 7.34716 9.12286 7.29451C9.10209 7.20932 9.08707 7.14769 9.04773 7.10959L8.98406 6.9863C8.85674 6.80136 8.6021 6.67808 8.28379 6.61644C8.22013 6.61644 8.22014 6.55479 8.34746 6.43151C8.41112 6.30822 8.53844 6.24658 8.66576 6.18493C8.9204 6.06165 9.62067 6 10.6392 6C11.0849 6 11.4668 6.06164 11.7851 6.12329C11.8169 6.15411 11.8647 6.16952 11.9124 6.18493C11.9602 6.20034 12.0079 6.21575 12.0397 6.24657L12.2307 6.43151C12.2307 6.46233 12.2466 6.50856 12.2626 6.55479C12.2785 6.60102 12.2944 6.64725 12.2944 6.67808V7.04794V7.47945V8.03425V8.71233V9.08219V9.45205V9.76027C12.3223 9.81433 12.338 9.86838 12.3521 9.91724C12.3703 9.97982 12.386 10.0339 12.4217 10.0685L12.6127 10.2534C12.6127 10.3151 12.6763 10.3151 12.74 10.3151C12.74 10.3767 12.8673 10.3151 12.931 10.2534C12.9721 10.1738 13.0397 10.1199 13.1168 10.0585C13.1591 10.0248 13.2042 9.98888 13.2493 9.9452C13.3425 9.85495 13.4357 9.73165 13.5539 9.57531C13.5971 9.5181 13.6437 9.45647 13.6949 9.39041C13.8859 9.14385 14.0768 8.83565 14.2678 8.52745L14.2678 8.52739C14.332 8.40312 14.3962 8.28135 14.4598 8.16057C14.7119 7.68225 14.9558 7.21946 15.1591 6.67808C15.1591 6.61644 15.1591 6.61644 15.2227 6.55481L15.2227 6.55479L15.2864 6.49315H15.3501H15.4137H15.541H15.732H18.1511C18.3421 6.43151 18.5331 6.43151 18.6604 6.49315C18.7877 6.49315 18.8514 6.5548 18.915 6.61644L18.9787 6.67808C19.106 7.04794 18.6604 7.84932 17.7055 9.08219C17.5744 9.20909 17.4734 9.33598 17.3406 9.5027C17.2798 9.57895 17.2125 9.66354 17.1326 9.76027C17.0998 9.80111 17.068 9.84061 17.0373 9.87882C16.6505 10.3598 16.4276 10.6369 16.3686 10.8082C16.305 11.0548 16.305 11.2397 16.4959 11.4863C16.5306 11.5198 16.5699 11.5624 16.6164 11.6129C16.7412 11.7482 16.9181 11.9399 17.1962 12.1644C17.9601 12.8425 18.5331 13.4589 18.7877 13.9521C18.7877 13.9829 18.8036 13.9983 18.8195 14.0137Z" fill="#202020" fill-opacity="0.4" />
+              </svg>
+            </a>
+          </li>
+          <li class='social__item'>
+            <a class='social__link' href='https://www.unstagram.com/Ladder-52' aria-label='Мы в инстаграм'>
+              <svg class='social__icon' width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.8692 0H3.13077C1.35384 0 0 1.35385 0 3.13077V18.8692C0 20.6462 1.35384 22 3.13077 22H18.8692C20.6462 22 22 20.6462 22 18.8692V3.13077C22 1.35385 20.6462 0 18.8692 0ZM11 17.6C14.6385 17.6 17.6 14.7231 17.6 11.2538C17.6 10.6615 17.5154 9.98462 17.3462 9.47692H19.2077V18.4462C19.2077 18.8692 18.8692 19.2923 18.3615 19.2923H3.63846C3.21539 19.2923 2.79231 18.9538 2.79231 18.4462V9.39231H4.73847C4.56924 9.98461 4.48462 10.5769 4.48462 11.1692C4.4 14.7231 7.36154 17.6 11 17.6ZM11 15.0615C8.63077 15.0615 6.76923 13.2 6.76923 10.9154C6.76923 8.63077 8.63077 6.76923 11 6.76923C13.3692 6.76923 15.2308 8.63077 15.2308 10.9154C15.2308 13.2846 13.3692 15.0615 11 15.0615ZM19.1231 6.00769C19.1231 6.51538 18.7 6.93846 18.1923 6.93846H15.8231C15.3154 6.93846 14.8923 6.51538 14.8923 6.00769V3.72308C14.8923 3.21538 15.3154 2.79231 15.8231 2.79231H18.1923C18.7 2.79231 19.1231 3.21538 19.1231 3.72308V6.00769Z" fill="#202020" fill-opacity="0.4" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src='js/script.js'></script>
+</body>
+
+</html>
