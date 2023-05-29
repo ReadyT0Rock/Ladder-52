@@ -290,7 +290,7 @@
       <div class='monolithic__container'>
         <h2 class='monolithic__title'>Преимущества монолитных лестниц</h2>
         <picture>
-          <source media='(min-width: 1440px)' src='img/index/monolithic/stairs-desktop.jpg' srcset='img/index/monolithic/stairs-desktop@2x.jpg 2x'>
+          <source media='(min-width: 1440px)' srcset='img/index/monolithic/stairs-desktop.jpg 1x, img/index/monolithic/stairs-desktop@2x.jpg 2x'>
           <img class='monilithic__img' src='img/index/monolithic/stairs-mobile.jpg' srcset='img/index/monolithic/stairs-mobile@2x.jpg 2x' width='431' height='470' alt='монолитная прямая лестница изображение в профиль'>
         </picture>
         <ul class='monolithic__list'>
@@ -355,18 +355,18 @@
       <div class='question__container'>
         <div class='question__wrapper-map'>
           <img src='img/index/question/map.jpg' srcset='img/index/question/map@2x.jpg 2x' width='725' height='560' alt='г. Нижний Новгород ул. Интернациональная, 100'>
-          <iframe class='question__map' src="https://yandex.ru/map-widget/v1/?ll=43.948862%2C56.309831&mode=whatshere&whatshere%5Bpoint%5D=43.948351%2C56.310043&whatshere%5Bzoom%5D=17&z=16.4" width="725" height="560" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+          <iframe class='question__map' src="https://yandex.ru/map-widget/v1/?ll=43.948862%2C56.309831&mode=whatshere&whatshere%5Bpoint%5D=43.948351%2C56.310043&whatshere%5Bzoom%5D=17&z=16.4" width="725" height="560" allowfullscreen="" style="position:relative;"></iframe>
         </div>
         <div>
           <h2 class='question__title'>У вас остались вопросы?</h2>
           <form class='question__form' action='#' method='post'>
             <p class='question__text'>Не нашли нужной информации? Интересует что-то конкретное? Напишите нам и наши специалисты ответят вам в течении 30 минут!</p>
-            <label class='visually-hidden' for='name'>ваше имя</label>
-            <input type='text' id='name' name='name' placeholder='Ваше имя...' required>
-            <label class='visually-hidden' for='phone'>ваш номер телефона</label>
-            <input type='tel' id='phone' name='phone' placeholder='Ваш телефон...' required>
+            <label class='visually-hidden' for='first-name'>ваше имя</label>
+            <input type='text' id='first-name' name='name' placeholder='Ваше имя...' required>
+            <label class='visually-hidden' for='tel'>ваш номер телефона</label>
+            <input type='tel' id='tel' name='phone' placeholder='Ваш телефон...' required>
             <label class='visually-hidden' for='question'>ваша почта</label>
-            <textarea type='text' id='question' name='question' placeholder='Ваш вопрос...'></textarea>
+            <textarea id='question' name='question' placeholder='Ваш вопрос...'></textarea>
             <button class='question__btn btn-main-style' type='submit'>Отправить сообщение</button>
             <strong class='question__footnote'>Нажимая на кнопку вы соглашаетесь с <a href='#'>политикой конфиденциальности</a></strong>
           </form>
