@@ -1,0 +1,164 @@
+.examples {
+  min-height: 1157px;
+  margin-bottom: 80px;
+
+  background-color: $main-background;
+  &__bg-decorate {
+    position: relative;
+
+    width: $mobile-width;
+    min-height: inherit;
+    margin: 0 auto;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 99px;
+
+      width: 5000px;
+      height: 100%;
+
+      background-color: $second-background;
+    }
+  }
+  &__container {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    width: $mobile-width;
+    min-height: inherit;
+    padding: 40px 20px 58px;
+    margin: 0 auto;
+    &::after {
+      position: absolute;
+      content: '';
+      z-index: -1;
+
+      top: 656px;
+      right: -90px;
+
+      width: 160px;
+      height: 160px;
+
+      background: url('../img/decorate-4.svg') no-repeat;
+    }
+  }
+  &__left-column {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+  &__right-column {
+    order: 1;
+    margin-bottom: 40px;
+  }
+  &__title {
+    position: relative;
+
+    width: 250px;
+    margin-bottom: 40px;
+
+    @include font(29px, 34.8px, 700);
+    &::after {
+      position: absolute;
+      content: '';
+      z-index: -1;
+
+      top: 53px;
+      right: -161px;
+
+      width: 160px;
+      height: 160px;
+
+      background: url('../img/decorate-2.svg') no-repeat;
+    }
+  }
+  &__list {
+    display: flex;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+  &__item {
+    margin-right: 20px;
+  }
+  &__wrapper-btn {
+    display: none;
+  }
+  &__description {
+    width: 260px;
+    margin-bottom: 20px;
+
+    @include font(18px, 28.8px, 600);
+  }
+  & dl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 290px;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+
+    @include font(14px, 29.4px, 600);
+  }
+  & dt {
+    font-weight: 400;
+  }
+  & dd {
+    margin: 0;
+    padding-left: 4px;
+  }
+  &__price {
+    margin-bottom: 40px;
+
+    @include font(15px, 28.5px, 400);
+    & b {
+      @include font(23px, 36.8px, 600);
+    }
+    & b {
+      padding-left: 41px;
+      margin-right: 4px;
+    }
+  }
+  &__link {
+    width: 263px;
+    min-height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .examples {
+    &__wrapper-btn {
+      position: relative;
+
+      display: flex;
+      width: 208px;
+      height: 130px;
+      &::before {
+        position: absolute;
+        content: '';
+        top: 40%;
+        left: 50%;
+
+        width: 2px;
+        height: 34px;
+
+        background-color: #f4f4f4;
+      }
+    }
+    &__btn {
+      width: 104px;
+      height: 130px;
+      padding: 0;
+
+      background-color: #202020;
+      border: 0;
+    }
+  }
+}

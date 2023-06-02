@@ -1,5 +1,91 @@
 .footer {
+  min-height: 386px;
+
+  background-color: $second-background;
+  &__container {
+    width: $mobile-width;
+    min-height: inherit;
+    padding: 40px 68px;
+    margin: 0 auto;
+
+    text-align: center;
+  }
+  &__column-left span {
+    display: block;
+    margin-bottom: 30px;
+
+    @include font(14.36px, 20.11px, 600);
+    letter-spacing: 3.8px;
+    color: $second-color-text;
+    text-transform: uppercase;
+  }
+  &__column__center {
+    display: none;
+  }
+  &__wrapper-logo {
+    display: flex;
+    margin-bottom: 5.22px;
+  }
+  &__logo {
+    margin-right: 20.5px;
+  }
+  &__logo-text {
+    @include font(14.36px, 20.11px, 600);
+    text-align: start;
+  }
+  &__phone {
+    display: block;
+    margin-bottom: 10px;
+
+    @include font(18px, 22px, 600);
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  &__btn {
+    width: 170px;
+    min-height: 40px;
+    margin-bottom: 20px;
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  &__copyright {
+    order: 3;
+  }
+  &__link-privacy {
+    order: 2;
+    margin-bottom: 9px;
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+
+.social {
+  width: 74px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 13px;
+  order: 1;
   &__icon {
-    fill: black;
+    fill: #202020;
+    opacity: 0.4;
+    &:active {
+      fill: $main-background;
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    &__icon {
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 }
