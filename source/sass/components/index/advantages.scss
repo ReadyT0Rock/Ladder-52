@@ -1,0 +1,138 @@
+.advantages {
+  min-height: 698px;
+  margin-bottom: 76px;
+  &__container {
+    position: relative;
+
+    width: $mobile-width;
+    min-height: inherit;
+    padding: 0 20px;
+    margin: 0 auto;
+    &::after {
+      position: absolute;
+      content: '';
+
+      bottom: -61px;
+      right: 116px;
+
+      width: 96px;
+      height: 96px;
+
+      background: url('../img/decorate-1.svg') no-repeat;
+    }
+  }
+  &__list {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 698px;
+  }
+  &__item {
+    position: relative;
+
+    min-height: 232px;
+    padding: 38px 27px 40px 110px;
+    &::before {
+      position: absolute;
+      content: '';
+      z-index: 1;
+      top: 54px;
+      left: 20px;
+
+      width: 60px;
+      height: 60px;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      top: 44px;
+      left: 14px;
+
+      width: 21px;
+      height: 80px;
+
+      background-color: $main-background;
+    }
+    &:nth-child(1) {
+      border-top: 2px solid $second-background;
+      border-left: 2px solid $second-background;
+      border-right: 2px solid $second-background;
+      &::before {
+        background: url('../img/index/advantages/work.svg') no-repeat;
+      }
+    }
+    &:nth-child(2) {
+      border: 2px solid $second-background;
+      &::before {
+        background: url('../img/index/advantages/fixed-prices.svg') no-repeat;
+      }
+    }
+    &:nth-child(3) {
+      border-bottom: 2px solid $second-background;
+      border-left: 2px solid $second-background;
+      border-right: 2px solid $second-background;
+      &::before {
+        background: url('../img/index/advantages/materials.svg') no-repeat;
+      }
+    }
+  }
+  &__title {
+    width: 200px;
+    margin-bottom: 8px;
+
+    @include font(18px, 25.2px, 600);
+  }
+  &__description {
+    width: 229px;
+
+    @include font(14px, 23.8px, 400);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    min-height: 234px;
+    margin-bottom: 125px;
+    &__container {
+      width: $desktop-width;
+      padding: 0 351px;
+      &::after {
+        position: absolute;
+        content: '';
+
+        bottom: 200px;
+        right: 116px;
+
+        width: 96px;
+        height: 96px;
+
+        background: url('../img/decorate-1.svg') no-repeat;
+      }
+    }
+    &__list {
+      flex-direction: row;
+      min-height: 234px;
+    }
+    &__item {
+      width: 407px;
+      min-height: 234px;
+      padding: 31px 27px 40px 124px;
+
+      border: 2px solid #f4f4f4;
+      &:nth-child(2) {
+        border-left: none;
+        border-right: none;
+      }
+      &::before {
+        top: 46px;
+        left: 35px;
+      }
+      &::after {
+        top: 36px;
+        left: 29px;
+      }
+    }
+  }
+}

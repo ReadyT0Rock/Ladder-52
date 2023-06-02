@@ -1,0 +1,81 @@
+.model {
+  min-height: 660px;
+  margin-bottom: 80px;
+
+  background-color: $second-background;
+  &__container {
+    position: relative;
+
+    width: $mobile-width;
+    min-height: inherit;
+    padding: 40px 32px 80px;
+    margin: 0 auto;
+
+    text-align: center;
+    &::after {
+      position: absolute;
+      content: '';
+      z-index: 1;
+
+      bottom: -136px;
+      right: -43px;
+
+      width: 160px;
+      height: 160px;
+
+      background: url('../img/decorate-2.svg') no-repeat;
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+
+    @include font(23px, 27.6px, 700);
+  }
+  &__description {
+    width: 257px;
+    margin: 0 auto;
+
+    @include font(14px, 22.4px, 400);
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 282px;
+    margin: 13px auto 0;
+    & input {
+      min-height: 72px;
+      padding-left: 9px;
+      padding-top: 10px;
+
+      border: none;
+      border-bottom: 2px solid rgba(32, 32, 32, 0.4);
+      background-color: $second-background;
+      &::placeholder {
+        @include font(14px, 20px, 400);
+      }
+      &:focus-visible {
+        border-bottom: 2px solid #ff9646;
+
+        outline: none;
+      }
+    }
+  }
+  &__btn {
+    width: 240px;
+    min-height: 50px;
+    margin: 50px auto 10px;
+  }
+  &__footnote {
+    width: 256px;
+    margin: 0 auto;
+
+    @include font(13px, 16px, 400);
+    color: rgba(32, 32, 32, 0.4);
+    & a {
+      text-decoration: underline;
+      &:active {
+        color: $main-color-text;
+      }
+    }
+  }
+}

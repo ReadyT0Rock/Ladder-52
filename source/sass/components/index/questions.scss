@@ -1,0 +1,83 @@
+.questions {
+  min-height: 543px;
+  margin-bottom: 80px;
+  &__container {
+    width: $mobile-width;
+    min-height: inherit;
+    padding: 0 48px;
+    margin: 0 auto;
+  }
+  &__wrapper-map {
+    display: none;
+  }
+  &__title {
+    margin-bottom: 30px;
+    padding-left: 20px;
+
+    @include font(29px, 34.8px, 700);
+    &::before {
+      left: 0;
+    }
+  }
+  &__text {
+    margin-bottom: 10px;
+
+    @include font(14px, 22.4px, 400);
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 282px;
+    margin: 13px auto 0;
+    & input,
+    & textarea {
+      padding-left: 9px;
+
+      border: none;
+      border-bottom: 2px solid rgba(32, 32, 32, 0.4);
+      background-color: #ffffff;
+      &::placeholder {
+        @include font(14px, 20px, 400);
+      }
+      &:focus-visible {
+        border-bottom: 2px solid #ff9646;
+
+        outline: none;
+      }
+    }
+    & input {
+      min-height: 58px;
+      margin-bottom: 13px;
+    }
+    & textarea {
+      min-height: 60px;
+      padding: 19px 10px 4px 9px;
+    }
+  }
+  &__btn {
+    width: 282px;
+    min-height: 50px;
+    margin: 50px auto 10px;
+  }
+  &__footnote {
+    width: 256px;
+    margin: 0 auto;
+
+    @include font(13px, 16px, 400);
+    color: rgba(32, 32, 32, 0.4);
+    & a {
+      text-decoration: underline;
+      &:active {
+        color: $main-color-text;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .questions {
+    &__wrapper-map {
+      display: block;
+    }
+  }
+}

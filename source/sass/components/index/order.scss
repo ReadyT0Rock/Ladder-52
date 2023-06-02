@@ -1,0 +1,90 @@
+.order {
+  min-height: 920px;
+  margin-bottom: 80px;
+
+  background-color: $main-background;
+  &__bg-decorate {
+    position: relative;
+
+    width: $mobile-width;
+    min-height: inherit;
+    margin: 0 auto;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 99px;
+
+      width: 5000px;
+      height: 100%;
+
+      background-color: $second-background;
+    }
+  }
+  &__container {
+    position: relative;
+    z-index: 1;
+
+    width: $mobile-width;
+    min-height: inherit;
+    padding: 40px 20px 60px;
+    margin: 0 auto;
+  }
+  &__title {
+    position: relative;
+
+    width: 250px;
+    margin-bottom: 40px;
+
+    @include font(36px, 43.2px, 700);
+    &::after {
+      position: absolute;
+      content: '';
+      z-index: -1;
+
+      top: 76px;
+      right: -236px;
+
+      width: 160px;
+      height: 160px;
+
+      background: url('../img/decorate-1.svg') no-repeat;
+    }
+  }
+  &__item {
+    position: relative;
+
+    min-height: 173px;
+    padding: 40px 16px 20px 99px;
+
+    border: 2px solid $second-background;
+    border-top: 0;
+    background-color: #ffffff;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 46px;
+      left: 28px;
+
+      width: 21px;
+      height: 80px;
+
+      background-color: $main-background;
+    }
+  }
+  & span {
+    position: absolute;
+    top: 59px;
+    left: 35px;
+
+    @include font(36px, 50.4px, 400);
+  }
+  &__subtitle {
+    margin-bottom: 10px;
+
+    @include font(18px, 25.2px, 700);
+  }
+  &__description {
+    @include font(12px, 20.4px, 400);
+  }
+}

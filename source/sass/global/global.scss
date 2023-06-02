@@ -17,7 +17,7 @@ body {
   width: 100%;
   min-height: 100%;
   margin: 0;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;
@@ -76,6 +76,10 @@ p {
 
   background-color: $main-color-bg-button;
   border: none;
+  border-radius: 2px;
+  &:focus-visible {
+    box-shadow: 0 0 0 5px #202020;
+  }
   &:active {
     opacity: 0.5;
   }

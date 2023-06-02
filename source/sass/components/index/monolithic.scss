@@ -1,0 +1,36 @@
+.monolithic {
+  min-height: 1147px;
+  margin-bottom: 80px;
+  &__container {
+    width: $mobile-width;
+    padding: 0 20px;
+    margin: 0 auto;
+    &--image {
+      width: $mobile-width;
+      padding: 0;
+      margin: 0 auto;
+    }
+    &:last-child {
+      margin-top: -36px;
+    }
+  }
+  &__title {
+    margin-bottom: 40px;
+
+    @include font(29px, 34.8px, 700);
+  }
+  &__list {
+    min-height: 598px;
+  }
+  &__item {
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    margin-bottom: 10px;
+
+    @include font(18px, 25.2px, 600);
+  }
+  &__description {
+    @include font(12px, 16.8px, 400);
+  }
+}

@@ -1,0 +1,82 @@
+.about-us {
+  min-height: 828px;
+  margin-bottom: 74px;
+  &__container {
+    width: $mobile-width;
+    min-height: inherit;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  &__title {
+    margin-bottom: 40px;
+
+    @include font(29px, 34.8px, 700);
+  }
+  &__motto {
+    display: block;
+    width: 277px;
+    margin-bottom: 20px;
+
+    @include font(23px, 36.8px, 600);
+  }
+  &__description {
+    margin-bottom: 77px;
+  }
+  &__text {
+    margin-bottom: 40px;
+
+    @include font(12px, 19.2px, 400);
+  }
+  &__subtitle {
+    width: 267px;
+    margin-bottom: 30px;
+
+    @include font(23px, 36.8px, 600);
+  }
+  &__list {
+    min-height: 300px;
+    margin-bottom: 40px;
+  }
+  &__item {
+    position: relative;
+
+    min-height: 80px;
+    margin-bottom: 30px;
+    padding: 29px 40px 25px 86px;
+
+    background-size: 60px 60px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &--design {
+        background: url('../img/index/about-us/design.svg') no-repeat;
+        background-position: 6px 10px;
+    }
+    &--installation {
+      background: url('../img/index/about-us/installation.svg') no-repeat;
+      background-position: 6px 10px;
+    }
+    &--manufacturing {
+      background: url('../img/index/about-us/manufacturing.svg') no-repeat;
+      background-position: 6px 10px;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      width: 21px;
+      height: 80px;
+
+      background-color: $main-background;
+
+    }
+  }
+  &__specialization {
+    @include font(18px, 25.2px, 600);
+
+
+  }
+}
