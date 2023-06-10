@@ -6,8 +6,16 @@
   &--type-ladder {
     width: 140px;
   }
-  &--examples {
+  &--examples,
+  &--finished-projects,
+  &--reviews {
     width: 86px;
+  }
+  &--finished-projects,
+  &--reviews {
+    & .slider-pagination__btn:not(.slider-pagination__btn--current) {
+      background-color: $main-color-bg-button;
+    }
   }
   &__btn {
     width: 9px;
@@ -30,7 +38,8 @@
 
 @media (min-width: $desktop-width) {
   .slider-pagination {
-    &--type-ladder {
+    &--type-ladder,
+    &--finished-projects {
       display: none;
     }
     &--examples {

@@ -1,0 +1,93 @@
+.finished-projects {
+  &__container {
+    width: $mobile-width;
+    padding: 0 20px;
+  }
+  &__wrapper-btn {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .finished-projects {
+    &__container {
+      width: $desktop-width;
+      padding: 0 351px;
+    }
+    &__top {
+      position: relative;
+    }
+    &__wrapper-btn {
+      position: absolute;
+      top: -45px;
+      right: 0;
+
+      display: flex;
+      margin-right: -64px;
+      padding-top: 3px;
+      &::before {
+        position: absolute;
+        content: '';
+        top: 38%;
+        left: 50%;
+
+        width: 2px;
+        height: 34px;
+
+        background-color: #000000;
+      }
+    }
+    &__btn {
+      position: relative;
+
+      width: 104px;
+      height: 130px;
+      padding: 0;
+
+      background-color: transparent;
+      border: 0;
+        &::before {
+          position: absolute;
+          content: '';
+          top: 46%;
+          left: 61%;
+
+          width: 12px;
+          height: 2px;
+
+          background-color: $second-color-bg;
+          transform: rotate(-45deg);
+        }
+        &::after {
+          position: absolute;
+          content: '';
+          top: 52%;
+          left: 61%;
+
+          width: 12px;
+          height: 2px;
+
+          background-color: $second-color-bg;
+          transform: rotate(45deg);
+        }
+    &--next {
+      &::before {
+        top: 51%;
+        left: 31%;
+      }
+      &::after {
+        top: 45%;
+        left: 31%;
+      }
+    }
+    &:hover::before,
+    &:hover::after {
+      background-color: $main-color-bg-button;
+    }
+    &:active::before,
+    &:active::after {
+      opacity: 0.5;
+    }
+  }
+  }
+}

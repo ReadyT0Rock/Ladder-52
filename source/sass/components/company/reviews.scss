@@ -1,0 +1,48 @@
+.reviews {
+  background-color: $main-background;
+  &__bg-decorate {
+    position: relative;
+
+    width: $mobile-width;
+    min-height: inherit;
+    margin: 0 auto;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 99px;
+
+      width: 5000px;
+      height: 100%;
+
+      background-color: $second-background;
+    }
+  }
+  &__container {
+    position: relative;
+    z-index: 1;
+
+    width: $mobile-width;
+    min-height: inherit;
+    padding: 40px 20px 58px;
+    margin: 0 auto;
+  }
+  &__wrapper-btn {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    &__bg-decorate {
+      width: $desktop-width;
+      &::before {
+        right: 738px;
+      }
+    }
+    &__container {
+      width: $desktop-width;
+      padding: 110px 351px 0 351px;
+    }
+  }
+}

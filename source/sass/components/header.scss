@@ -30,6 +30,16 @@
     min-height: inherit;
     padding: 14px 20px 0 17px;
     margin: 0 auto;
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+
+      width: 420px;
+      height: 3px;
+
+      background-color: #ff9646;
+    }
   }
   &__burger {
     display: flex;
@@ -162,6 +172,9 @@
       width: $desktop-width;
       justify-content: flex-start;
       padding: 26px 351px;
+      &::after {
+        width: 1218px;
+      }
     }
     &__wrapper-logo {
       margin-left: -14px;

@@ -1,0 +1,62 @@
+.about-company {
+  &__bg-decorate {
+    position: relative;
+
+    width: $mobile-width;
+    min-height: inherit;
+    margin: 0 auto;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 320px;
+
+      width: 5000px;
+      height: 100%;
+
+      background-color: $main-background;
+  }
+}
+  &__container {
+    position: relative;
+    z-index: 1;
+
+    width: $mobile-width;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  &__wrapper {
+    &:first-child {
+      position: relative;
+
+      width: 380px;
+      height: 370px;
+    }
+  }
+  &__decorate-square {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -20px;
+
+    width: 420px;
+    height: 370px;
+
+    font-size: 0;
+
+    background-color: #727272;
+  }
+}
+
+@media (min-width) {
+  .about-company {
+    &__bg-decorate {
+      width: $mobile-width;
+      padding: 02 20px;
+    }
+    &__container {
+      width: $desktop-width;
+      padding: 0 351px;
+    }
+  }
+}

@@ -10,6 +10,7 @@
 @import '../sass/components/footer.scss';
 @import '../sass/components/slider-pagination.scss';
 @import '../sass/components/title-decorate.scss';
+@import '../sass/components/breadcrumbs.scss';
 
 /* index */
 @import '../sass/components/index/promo.scss';
@@ -21,3 +22,8 @@
 @import '../sass/components/index/monolithic.scss';
 @import '../sass/components/index/order.scss';
 @import '../sass/components/index/questions.scss';
+
+/* about-company */
+@import '../sass/components/company/about-company.scss';
+@import '../sass/components/company/finished-projects.scss';
+@import '../sass/components/company/reviews.scss';
