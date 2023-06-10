@@ -138,5 +138,14 @@
         color: $main-color-text;
       }
     }
+    // Страница "О компании"
+    &__container--about-company {
+      background: url('../img/about-company/questions/background.jpg') no-repeat;
+      background-size: 725px 560px;
+      background-position: 200px 0;
+      & > div {
+        padding-left: 800px;
+      }
+    }
   }
 }
