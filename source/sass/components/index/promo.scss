@@ -129,6 +129,10 @@
       display: flex;
       width: $desktop-width;
       padding: 0 351px 0 220px;
+      &::after {
+        bottom: -305px;
+        right: 199px;
+      }
     }
     &__img {
       width: 859px;
@@ -164,6 +168,11 @@
       width: 446px;
       height: 220px;
       padding: 40px 67px 28px;
+    }
+    &__link-calculate {
+      &:hover {
+        background-color: $main-color-bg-button;
+      }
     }
     &__text-calculate {
       margin-bottom: 25px;

@@ -27,3 +27,18 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider-pagination {
+    &--type-ladder {
+      display: none;
+    }
+    &--examples {
+      margin-top: 49px;
+      margin-left: 61px;
+    }
+    &__btn:not(.slider-pagination__btn--current) {
+      background-color: #f4f4f4;
+    }
+  }
+}

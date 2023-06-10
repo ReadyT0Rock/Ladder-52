@@ -88,3 +88,44 @@
     @include font(12px, 20.4px, 400);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .order {
+    min-height: 600px;
+    margin-bottom: 110px;
+    &__bg-decorate {
+      width: $desktop-width;
+      &::before {
+        right: 737px;
+      }
+    }
+    &__container {
+      width: $desktop-width;
+      padding: 110px 351px 126px;
+    }
+    &__title {
+      &::after {
+        top: 76px;
+        right: -1080px;
+      }
+    }
+    &__list {
+      display: flex;
+
+      border: 2px solid $second-background;
+    }
+    &__item {
+      width: 307px;
+      min-height: 234px;
+      padding: 38px 30px 40px 99px;
+
+      border: 0;
+      &:not(:last-child) {
+        border-right: 2px solid $second-background;
+      }
+    }
+    &__description {
+      @include font(14px, 23.8px, 400);
+    }
+  }
+}

@@ -233,6 +233,9 @@
       &--contact-number {
         display: block;
         margin-bottom: 10px;
+        &:active {
+          color: $main-color-text;
+        }
       }
     }
     &__btn {

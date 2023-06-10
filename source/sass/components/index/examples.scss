@@ -134,6 +134,73 @@
 
 @media (min-width: $desktop-width) {
   .examples {
+    min-height: 853px;
+    margin-bottom: 107px;
+    &__bg-decorate {
+      width: $desktop-width;
+      &::before {
+        right: 738px;
+      }
+    }
+    &__container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: $desktop-width;
+      padding: 110px 351px 0 351px;
+      &::after {
+        top: 53px;
+        right: 352px;
+      }
+    }
+    &__left-column {
+      width: 416px;
+      order: 1;
+      margin-right: 208px;
+    }
+    &__right-column {
+      order: 2;
+      margin-top: -146px;
+      margin-bottom: 0;
+      & > div {
+        display: flex;
+      }
+    }
+    &__title {
+      width: 100%;
+
+      @include font(36px, 43.2px, 700);
+      &::after {
+        width: 160px;
+        height: 160px;
+
+        top: 374px;
+        right: 600px;
+
+        background: url('../img/decorate-2.svg') no-repeat;
+      }
+    }
+    &__description {
+      width: 350px;
+      margin-bottom: 30px;
+
+      @include font(23px, 36.8px, 600);
+    }
+    &__list {
+      padding: 0;
+
+      overflow-x: auto;
+    }
+    &__item {
+      height: 630px;
+      margin-right: 0;
+    }
+    &__item:not(.examples__item--current) {
+      display: none;
+    }
+    &__img {
+      width: 490px;
+      height: 630px;
+    }
     &__wrapper-btn {
       position: relative;
 
@@ -143,7 +210,7 @@
       &::before {
         position: absolute;
         content: '';
-        top: 40%;
+        top: 38%;
         left: 50%;
 
         width: 2px;
@@ -159,6 +226,49 @@
 
       background-color: #202020;
       border: 0;
+      &::before {
+        position: absolute;
+        content: '';
+        top: 46%;
+        left: 64%;
+
+        width: 12px;
+        height: 2px;
+
+        background-color: #f4f4f4;
+        transform: rotate(45deg);
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        top: 52%;
+        left: 64%;
+
+        width: 12px;
+        height: 2px;
+
+        background-color: #f4f4f4;
+        transform: rotate(-45deg);
+      }
+      &--back {
+        margin-right: -1px;
+        &::before {
+          top: 51%;
+          left: 31%;
+        }
+        &::after {
+          top: 45%;
+          left: 31%;
+        }
+      }
+      &:hover::before,
+      &:hover::after {
+        background-color: $main-color-bg-button;
+      }
+      &:active::before,
+      &:active::after {
+        opacity: 0.5;
+      }
     }
   }
 }

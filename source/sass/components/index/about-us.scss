@@ -76,7 +76,61 @@
   }
   &__specialization {
     @include font(18px, 25.2px, 600);
+  }
+}
 
+@media (min-width: $desktop-width) {
+  .about-us {
+    min-height: 526px;
+    margin-bottom: 43px;
+    &__container {
+      position: relative;
+      width: $desktop-width;
+      padding: 0 351px;
+      &::before {
+        position: absolute;
+        content: '';
+        top: -50px;
+        right: 303px;
 
+        width: 96px;
+        height: 96px;
+
+        background: url('../img/decorate-1.svg') no-repeat;
+      }
+    }
+    &__title {
+      width: 350px;
+
+      @include font(36px, 43.2px, 700);
+    }
+    &__content-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__description {
+      width: 388px;
+      margin-right: 88px;
+    }
+    &__motto {
+      margin-bottom: 30px;
+    }
+    &__text {
+      margin-bottom: 17px;
+
+      @include font(14px, 22.4px, 400);
+    }
+    &__column-center {
+      width: 303px;
+      margin-right: 53px;
+    }
+    &__subtitle {
+      margin-bottom: 26px;
+    }
+    &__img {
+      width: 386px;
+      height: 390px;
+      margin-top: 8px;
+    }
   }
 }

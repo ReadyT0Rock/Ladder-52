@@ -76,8 +76,67 @@
 
 @media (min-width: $desktop-width) {
   .questions {
+    min-height: 560px;
+    margin-bottom: 110px;
+    &__container {
+      display: flex;
+      align-items: flex-start;
+      width: $desktop-width;
+      padding: 0 351px 0 220px;
+    }
     &__wrapper-map {
+      position: relative;
+      z-index: 3;
+
       display: block;
+      width: 725px;
+      height: 560px;
+      margin-right: 134px;
+
+      border: 8px solid #fde4cf;
+      & iframe {
+        border: 0;
+      }
+    }
+    &__map {
+      position: absolute;
+      padding: 0;
+    }
+    &__title {
+      padding: 0;
+      width: 330px;
+      margin-bottom: 38px;
+
+      @include font(36px, 43.2px, 700);
+      &::before {
+        left: -41px;
+      }
+    }
+    &__text {
+      width: 386px;
+      margin-bottom: 25px;
+
+      @include font(14px, 22.4px, 400);
+    }
+    &__form {
+      width: 490px;
+      margin: 0;
+    }
+    &__btn {
+      width: 277px;
+      margin: 50px 0 10px;
+    }
+    &__footnote {
+      margin: 0;
+      margin-left: 10px;
+
+      text-align: center;
+      & a:hover {
+        color: $second-color-text;
+      }
+      & a:active {
+        color: $main-color-text;
+      }
     }
   }
 }

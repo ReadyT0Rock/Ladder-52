@@ -19,7 +19,7 @@
     color: $second-color-text;
     text-transform: uppercase;
   }
-  &__column__center {
+  &__column-center {
     display: none;
   }
   &__wrapper-logo {
@@ -53,12 +53,16 @@
   }
   &__copyright {
     order: 3;
+
+    opacity: 0.4;
   }
   &__link-privacy {
     order: 2;
     margin-bottom: 9px;
+
+    opacity: 0.4;
     &:active {
-      opacity: 0.5;
+      opacity: 1;
     }
   }
 }
@@ -67,6 +71,7 @@
   width: 74px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 auto;
   margin-bottom: 13px;
   order: 1;
@@ -87,5 +92,95 @@
         opacity: 1;
       }
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    min-height: 190px;
+    &__container {
+      width: $desktop-width;
+      padding: 30px 351px;
+    }
+    &__top {
+      display: flex;
+      margin-bottom: 12px;
+    }
+    &__bottom {
+      flex-direction: row;
+    }
+    &__column-left {
+      width: 284px;
+      margin-right: 236px;
+      & span {
+        margin-bottom: 0;
+
+        letter-spacing: 3.5px;
+      }
+    }
+    &__column-center {
+      display: flex;
+      padding-top: 14px;
+    }
+    &__column-right {
+      margin-left: auto;
+    }
+    &__navigation {
+      &-list {
+        display: flex;
+        flex-direction: column;
+        width: 140px;
+
+        text-align: left;
+        &:first-child {
+          margin-right: 23px;
+        }
+      }
+      &-item {
+        margin-bottom: 5px;
+      }
+      &-link {
+        @include font(14px, 19.6px, 400);
+        &:hover {
+          color: $second-color-text;
+        }
+        &:active {
+          color: $main-color-text;
+          opacity: 0.5;
+        }
+      }
+    }
+    &__logo {
+      margin-right: 17.5px;
+      &-text {
+        width: 160px;
+      }
+    }
+    &__phone {
+      &:hover {
+        color: $second-color-text;
+      }
+      &:active {
+        color: $main-color-text;
+      }
+    }
+    &__copyright {
+      order: 2;
+      margin-right: 305px;
+    }
+    &__link-privacy {
+      &:hover {
+        color: $second-color-text;
+        opacity: 1;
+      }
+      &:active {
+        color: $main-color-text;
+      }
+    }
+  }
+  .social {
+    order: 3;
+    margin: 0;
+    margin-left: auto;
   }
 }
