@@ -17,6 +17,8 @@
 @media (min-width: $desktop-width) {
   .title-decorate {
     &::before {
+      left: -40px;
+
       width: 120px;
       height: 18px;
     }

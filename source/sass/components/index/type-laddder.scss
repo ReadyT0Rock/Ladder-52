@@ -75,13 +75,16 @@
 
     @include font(23px, 36.8px, 600);
   }
-  &__price + pre {
+  &__price {
     margin-bottom: 14px;
     margin-top: 0;
 
     font-family: 'Montserrat', 'Arial', sans-serif;
     @include font(14px, 19.6px, 400);
     & b {
+      margin-left: 10px;
+      margin-right: 2px;
+
       @include font(23px, 36.8px, 600);
     }
   }
@@ -91,5 +94,106 @@
     min-height: 50px;
     padding: 15px 53px;
     margin:  0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .type-ladder {
+    min-height: 621px;
+    margin-bottom: 120px;
+    &__container {
+      width: $desktop-width;
+      padding: 0 351px;
+    }
+    &__top {
+      position: relative;
+    }
+    &__title {
+      padding-left: 0;
+
+      @include font(36px, 43.2px, 700);
+    }
+    &__wrapper-btn {
+      position: absolute;
+      top: -45px;
+      right: 0;
+
+      display: flex;
+      margin-right: -64px;
+      padding-top: 3px;
+      &::before {
+        position: absolute;
+        content: '';
+        top: 38%;
+        left: 50%;
+
+        width: 2px;
+        height: 34px;
+
+        background-color: #000000;
+      }
+    }
+      &__btn {
+        position: relative;
+
+        width: 104px;
+        height: 130px;
+        padding: 0;
+
+        background-color: transparent;
+        border: 0;
+          &::before {
+            position: absolute;
+            content: '';
+            top: 46%;
+            left: 61%;
+
+            width: 12px;
+            height: 2px;
+
+            background-color: $second-color-bg;
+            transform: rotate(-45deg);
+          }
+          &::after {
+            position: absolute;
+            content: '';
+            top: 52%;
+            left: 61%;
+
+            width: 12px;
+            height: 2px;
+
+            background-color: $second-color-bg;
+            transform: rotate(45deg);
+          }
+      &--next {
+        &::before {
+          top: 51%;
+          left: 31%;
+        }
+        &::after {
+          top: 45%;
+          left: 31%;
+        }
+      }
+      &:hover::before,
+      &:hover::after {
+        background-color: $main-color-bg-button;
+      }
+      &:active::before,
+      &:active::after {
+        opacity: 0.5;
+      }
+    }
+    &__list {
+      overflow-x: auto;
+    }
+    &__item {
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        display: none;
+      }
+    }
   }
 }

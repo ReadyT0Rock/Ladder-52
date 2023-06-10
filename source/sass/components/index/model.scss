@@ -79,3 +79,72 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .model {
+    min-height: 545px;
+    margin-bottom: 120px;
+    &__container {
+      width: $desktop-width;
+      padding: 66px 351px  80px 351px;
+      &::after {
+        bottom: 271px;
+        right: 1457px;
+      }
+      &::before {
+        position: absolute;
+        content: '';
+        bottom: 246px;
+        right: 1560px;
+
+        width: 160px;
+        height: 160px;
+
+        background: url('../img/decorate-5.svg') no-repeat;
+      }
+    }
+    &__title {
+      width: 700px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+
+      @include font(36px, 43.2px, 700);
+    }
+    &__description {
+      width: 544px;
+      margin-bottom: 43px;
+
+      @include font(18px, 28.8px, 400);
+    }
+    &__form {
+      width: 1010px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      & input {
+        width: 282px;
+        margin-right: 82px;
+        margin-bottom: 60px;
+      }
+      & input[type='email'] {
+        margin-right: 0;
+      }
+  }
+  &__btn {
+    margin: 0;
+    margin-left: 267px;
+  }
+  &__footnote {
+    width: 230px;
+    margin-left: 30px;
+
+    text-align: left;
+    & a:hover {
+      color: $second-color-text;
+    }
+    & a:active {
+      color: $main-color-text;
+    }
+  }
+}
+}
