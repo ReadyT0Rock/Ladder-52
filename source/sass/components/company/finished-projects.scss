@@ -1,10 +1,37 @@
 .finished-projects {
+  min-height: 702px;
+  margin-bottom: 80px;
   &__container {
     width: $mobile-width;
     padding: 0 20px;
+    margin: 0 auto;
   }
   &__wrapper-btn {
     display: none;
+  }
+  &__title {
+    margin-bottom: 40px;
+
+    @include font(29px, 34.8px, 700);
+  }
+  &__list {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    margin-bottom: 16px;
+  }
+  &__item:not(:first-child) {
+    display: none;
+  }
+  &__link {
+    display: block;
+    width: 279px;
+    min-height: 50px;
+    margin: 0 auto;
+    padding: 15px 51px;
+
+    background-color: $second-color-bg;
   }
 }
 

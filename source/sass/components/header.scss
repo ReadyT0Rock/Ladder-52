@@ -30,15 +30,19 @@
     min-height: inherit;
     padding: 14px 20px 0 17px;
     margin: 0 auto;
-    &::after {
-      position: absolute;
-      content: '';
-      bottom: 0;
+    &--decorate-line {
+      &::after {
+        position: absolute;
+        content: '';
+        z-index: 1;
+        bottom: -3px;
+        left: 0;
 
-      width: 420px;
-      height: 3px;
+        width: 420px;
+        height: 3px;
 
-      background-color: #ff9646;
+        background-color: #ff9646;
+      }
     }
   }
   &__burger {

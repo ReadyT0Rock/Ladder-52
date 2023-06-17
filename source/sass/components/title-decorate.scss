@@ -12,6 +12,14 @@
 
     background-color: $main-background;
   }
+  &--about-company {
+    &::before {
+      bottom: 2px;
+      left: -20px;
+
+      background-color: #ff9646;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
