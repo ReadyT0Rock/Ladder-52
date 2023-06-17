@@ -25,6 +25,12 @@
 
       background: url('../img/decorate-2.svg') no-repeat;
     }
+    &--decorate-aboout-company {
+      &::after {
+        bottom: -234px;
+        right: -55px;
+      }
+    }
   }
   &__title {
     margin-bottom: 20px;

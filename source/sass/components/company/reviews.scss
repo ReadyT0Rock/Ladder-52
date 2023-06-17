@@ -1,4 +1,6 @@
 .reviews {
+  margin-bottom: 80px;
+
   background-color: $main-background;
   &__bg-decorate {
     position: relative;
@@ -24,11 +26,92 @@
 
     width: $mobile-width;
     min-height: inherit;
-    padding: 40px 20px 58px;
+    padding: 40px 20px 60px;
     margin: 0 auto;
+    &::after {
+      position: absolute;
+      content: '';
+      right: -85px;
+      bottom: 92px;
+
+      width: 160px;
+      height: 160px;
+
+      background: url('../img/decorate-4.svg') no-repeat;
+    }
   }
   &__wrapper-btn {
     display: none;
+  }
+  &__title {
+    margin-bottom: 40px;
+
+    @include font(29px, 34.8px, 700);
+    &::after {
+      position: absolute;
+      content: '';
+      right: 34px;
+      top: 52px;
+
+      width: 96px;
+      height: 96px;
+
+      background: url('../img/decorate-2.svg') no-repeat;
+    }
+  }
+  &__list {
+    position: relative;
+    z-index: 1;
+
+    margin-bottom: 22px;
+  }
+  &__item {
+    width: 380px;
+    min-height: 450px;
+    padding: 40px 30px;
+
+    background-color: $main-color-bg;
+    &:not(:first-child) {
+      display: none;
+    }
+    & img {
+      float: left;
+      margin-right: 20px;
+    }
+  }
+  &__content {
+    & > div {
+      display: flex;
+      flex-direction: column;
+      min-height: 150px;
+      padding-top: 72px;
+      margin-bottom: 19px;
+    }
+    & cite {
+      width: 105px;
+      margin-bottom: 5px;
+
+      @include font(18px, 25.2px, 700);
+      font-style: normal;
+    }
+    & span {
+      @include font(15px, 24px, 400);
+
+      opacity: 0.4;
+    }
+    & p {
+      margin-bottom: 18px;
+
+      @include font(12px, 20.4px, 400);
+    }
+    & a {
+      @include font(14px, 23.8px, 700);
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+      &:active {
+        opacity: 0.5;
+      }
+    }
   }
 }
 
