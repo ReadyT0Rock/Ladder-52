@@ -21,7 +21,6 @@
   }
   &__text {
     margin-bottom: 10px;
-    margin-left: 20px;
 
     @include font(14px, 22.4px, 400);
   }
@@ -140,10 +139,12 @@
       }
     }
     // Страница "О компании"
-    &__container--about-company {
+    &__container--background {
+      justify-content: flex-end;
+
       background: url('../img/about-company/questions/background.jpg') no-repeat;
       background-size: 725px 560px;
-      background-position: 200px 0;
+      background-position: 219px 0;
       & > div {
         padding-left: 800px;
       }

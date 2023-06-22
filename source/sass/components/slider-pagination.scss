@@ -49,6 +49,12 @@
       margin-top: 49px;
       margin-left: 61px;
     }
+    &--reviews {
+      position: absolute;
+      z-index: 1;
+      bottom: 47px;
+      left: 448px;
+    }
     &__btn:not(.slider-pagination__btn--current) {
       background-color: #f4f4f4;
     }

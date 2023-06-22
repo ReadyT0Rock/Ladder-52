@@ -162,6 +162,9 @@
 @media (min-width: $desktop-width) {
   .header {
     min-height: 160px;
+    &--height {
+      min-height: 148px;
+    }
     &__bg-decorate {
       position: relative;
 
@@ -178,6 +181,14 @@
       padding: 26px 351px;
       &::after {
         width: 1218px;
+      }
+      &--decorate-line {
+        &::after {
+          bottom: 0;
+          left: 352px;
+
+          width: 1218px;
+        }
       }
     }
     &__wrapper-logo {
@@ -244,8 +255,20 @@
       }
     }
     &__link {
+      position: relative;
       &:hover {
         color: $second-color-text;
+      }
+      &:hover::after {
+        position: absolute;
+        content: '';
+        top: 20px;
+        left: 0;
+
+        width: 100%;
+        height: 2px;
+
+        background-color: $second-color-text;
       }
       &--contact-number {
         display: block;

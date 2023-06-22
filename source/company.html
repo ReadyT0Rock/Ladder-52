@@ -18,7 +18,7 @@
 
 <body>
 
-  <header class='header'>
+  <header class='header header--height'>
     <div class='header__bg-decorate'>
     <div class='header__container header__container--decorate-line'>
       <div class='header__wrapper-logo'>
@@ -73,13 +73,13 @@
                 <a class='breadcrumbs__link' href='index.html'>Главная</a>
               </li>
               <li class='breadcrumbs__item'>
-                <a class='breadcrumbs__link'>О компании</a>
+                <a class='breadcrumbs__link breadcrumbs__link--current'>О компании</a>
               </li>
             </ul>
             <a class='breadcrumbs__link breadcrumbs__link--to-main' href='index.html'>Вернуться на главную</a>
           </div>
           <h1 class='about-company__title title-decorate title-decorate--about-company'>О компании</h1>
-          <div>
+          <div class='about-company__box'>
             <div class='about-company__wrapper'>
               <span class='about-company__decorate-square'>декоративный элемент</span>
             </div>
@@ -133,19 +133,19 @@
 
     <section class='principles'>
       <div class='principles__container'>
-        <h2 class='principles__title'>Основные принципы в работе</h2>
+        <h2 class='principles__title title-decorate'>Основные принципы в работе</h2>
         <ul class='principles__list'>
           <li class='principles__item'>
-            <h3 class='principles__subtitle'>Комплексный подход на каждом этапе</h3>
+            <h3 class='principles__subtitle'>Комплексный подход<br> на каждом этапе</h3>
             <p class='principles__description'>Все работы по изготовлению монолитных железобетонных лестниц наша компания выполняет комплексно — начиная с проекта лестницы, подготовки всех нужных материалов, ее изготовления и заканчивая техническим надзором за этапами монтажа.</p>
           </li>
           <li class='principles__item'>
-            <h3 class='principles__subtitle'>Ориентированность на конечного пользователя</h3>
+            <h3 class='principles__subtitle'>Ориентированность<br> на конечного пользователя</h3>
             <p class='principles__description'>При составлении проекта будущей лестницы мы учитываем множество связанных между собой факторов, влияющих на удобство последующего использования лестницы. Конечно не забывая о пожеланиях заказчика
               и последних мировых тенденциях в области технологий строительства.</p>
           </li>
           <li class='principles__item'>
-            <h3 class='principles__subtitle'>Профессионализм и качество</h3>
+            <h3 class='principles__subtitle'>Профессионализм<br> и качество</h3>
             <p class='principles__description'>За время работы мы сумели зарекомендовать себя исключительно с положительной стороны, а список довольных клиентов постоянно пополняется. О чем свидетельствуют многочисленные позитивные отзывы клиентов на сайте, форумах в интернете, обсуждениях
               в социальных сетях.</p>
           </li>
@@ -153,7 +153,7 @@
       </div>
     </section>
 
-    <section class='model'>
+    <section class='model model--margin'>
       <div class='model__container model__container--decorate-aboout-company'>
         <h2 class='model__title'>Получите 3d-визуализацию вашей будущей лестницы бесплатно!</h2>
         <p class='model__description'>Оставьте свои контактные данные и наш специалист свяжется свами в течении 15 минут!</p>
@@ -176,10 +176,10 @@
         <h2 class='finished-projects__title title-decorate'>Готовые проекты</h2>
         <div class='finished-projects__wrapper-btn'>
           <button class='finished-projects__btn finished-projects__btn--back' type='button'>
-            <span class='visually-hidden'>показать предыдущие типы лестниц</span>
+            <span class='visually-hidden'>показать предыдущие проекты</span>
           </button>
           <button class='finished-projects__btn finished-projects__btn--next' type='button'>
-            <span class='visually-hidden'>показать следующие типы лестниц</span>
+            <span class='visually-hidden'>показать следующие проекты</span>
           </button>
         </div>
       </div>
@@ -227,10 +227,10 @@
           <div class='reviews__wrapper'>
             <div class='reviews__wrapper-btn'>
               <button class='reviews__btn reviews__btn--back' type='button'>
-                <span class='visually-hidden'>показать предыдущие типы лестниц</span>
+                <span class='visually-hidden'>показать предыдущий отзыв</span>
               </button>
               <button class='reviews__btn reviews__btn--next' type='button'>
-                <span class='visually-hidden'>показать следующие типы лестниц</span>
+                <span class='visually-hidden'>показать следующий отзыв</span>
               </button>
             </div>
           <ul class='reviews__list'>
@@ -273,8 +273,8 @@
       </div>
     </section>
 
-    <section class='questions questions--about-company'>
-      <div class='questions__container questions__container--about-company'>
+    <section class='questions questions--background'>
+      <div class='questions__container questions__container--background'>
         <div>
           <h2 class='questions__title title-decorate'>У вас остались вопросы?</h2>
           <p class='questions__text'>Не нашли нужной информации? Интересует что-то конкретное? Напишите нам и наши специалисты ответят вам в течении 30 минут!</p>

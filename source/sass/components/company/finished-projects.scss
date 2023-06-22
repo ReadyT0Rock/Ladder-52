@@ -37,6 +37,7 @@
 
 @media (min-width: $desktop-width) {
   .finished-projects {
+    margin-bottom: 106px;
     &__container {
       width: $desktop-width;
       padding: 0 351px;
@@ -44,9 +45,12 @@
     &__top {
       position: relative;
     }
+    &__title {
+      @include font(36px, 43.2px, 700);
+    }
     &__wrapper-btn {
       position: absolute;
-      top: -45px;
+      top: -46px;
       right: 0;
 
       display: flex;
@@ -114,6 +118,30 @@
     &:active::before,
     &:active::after {
       opacity: 0.5;
+    }
+  }
+  &__list {
+    margin-bottom: 64px;
+  }
+  &__item {
+    &:not(:first-child) {
+      display: block;
+      width: 386px;
+      height: 496px;
+    }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    & img {
+      width: 386px;
+      height: 496px;
+    }
+  }
+  &__link {
+    &:hover {
+      color: $main-color-text;
+
+      background-color: $main-color-bg-button;
     }
   }
   }

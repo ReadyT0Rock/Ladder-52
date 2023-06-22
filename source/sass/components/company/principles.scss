@@ -1,3 +1,33 @@
 .principles {
   display: none;
 }
+
+@media (min-width: $desktop-width) {
+  .principles {
+    display: flex;
+    min-height: 384px;
+    margin-bottom: 135px;
+    &__container {
+      width: $desktop-width;
+      padding: 0 321px 0 407px;
+    }
+    &__title {
+      width: 450px;
+      margin-bottom: 40px;
+
+      @include font(36px, 43.2px, 700);
+    }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item {
+      width: 360px;
+    }
+    &__subtitle {
+      margin-bottom: 29px;
+
+      @include font(23px, 36.8px, 600);
+    }
+  }
+}

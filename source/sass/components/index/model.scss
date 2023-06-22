@@ -90,6 +90,9 @@
   .model {
     min-height: 545px;
     margin-bottom: 120px;
+    &--margin {
+      margin-bottom: 109px;
+    }
     &__container {
       width: $desktop-width;
       padding: 66px 351px  80px 351px;
