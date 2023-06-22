@@ -13,7 +13,8 @@
     background-color: $main-background;
   }
   &--about-company,
-  &--catalog {
+  &--catalog,
+  &--winder-ladder {
     &::before {
       bottom: 2px;
       left: -20px;
