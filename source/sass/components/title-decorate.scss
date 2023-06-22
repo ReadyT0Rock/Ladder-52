@@ -12,7 +12,8 @@
 
     background-color: $main-background;
   }
-  &--about-company {
+  &--about-company,
+  &--catalog {
     &::before {
       bottom: 2px;
       left: -20px;

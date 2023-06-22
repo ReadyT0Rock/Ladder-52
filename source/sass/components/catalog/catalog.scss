@@ -1,5 +1,48 @@
 .catalog {
+  &__bg-decorate {
+    position: relative;
 
+    width: $mobile-width;
+    min-height: inherit;
+    margin: 0 auto;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 320px;
+
+      width: 5000px;
+      height: 440px;
+
+      background-color: $main-background;
+    }
+  }
+  &__container {
+    position: relative;
+    z-index: 1;
+
+    width: $mobile-width;
+    padding: 15px 17px 0;
+    margin: 0 auto;
+
+    &::before {
+      position: absolute;
+      content: '';
+      z-index: 1;
+      right: -2px;
+      top: 57px;
+
+      width: 96px;
+      height: 96px;
+
+      background: url('../img/decorate-1.svg') no-repeat;
+    }
+  }
+  &__title {
+    margin-bottom: 40px;
+
+    @include font(29px, 1.2, 700);
+  }
 }
 
 .type-ladder {
@@ -7,6 +50,46 @@
     &--catalog {
       display: flex;
       flex-direction: column;
+      width: 386px;
+      margin-bottom: 0;
+
+      overflow-x: auto;
+    }
+    & .type-ladder__item {
+      margin-right: 0;
+
+      background-color: #ffffff;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    &__bg-decorate {
+      width: $desktop-width;
+      &::before {
+        right: 1183px;
+
+        height: 701px;
+      }
+    }
+    &__container {
+      width: $desktop-width;
+      padding: 14px 351px 0;
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .type-ladder {
+    &__list {
+      &--catalog {
+        width: 1218px;
+      }
     }
   }
 }
