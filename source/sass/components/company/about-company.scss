@@ -246,21 +246,108 @@
   }
 }
 
-@media (min-width) {
+@media (min-width: $desktop-width) {
   .about-company {
+    min-height: 703px;
+    margin-bottom: 284px;
     &__bg-decorate {
-      width: $mobile-width;
-      padding: 02 20px;
+      width: $desktop-width;
+      &::before {
+        right: 1183px;
+
+        height: 701px;
+      }
     }
     &__container {
       width: $desktop-width;
-      padding: 0 351px;
+      padding: 14px 351px 0;
+      &::before {
+        left: 205px;
+        bottom: -287px;
+
+        background: url('../img/decorate-1.svg');
+      }
+    }
+    &__title {
+      margin-top: 4px;
+      margin-bottom: 41px;
+
+      @include font(36px, 43.2px, 700);
+      &::after {
+        display: none;
+      }
+    }
+    &__box {
+      display: flex;
+      justify-content: space-between;
+      min-height: 476px;
+      margin-bottom: 78px;
+    }
+    &__wrapper {
+      margin-bottom: 0;
+      &:first-child {
+        width: 386px;
+        height: 374px;
+        margin-bottom: 0;
+      }
+      &:nth-child(2) {
+        width: 365px;
+      }
+    }
+    &__decorate-square {
+      left: 0;
+
+      width: 386px;
+      height: 374px;
+    }
+    &__motto {
+      margin-bottom: 30px;
+    }
+    &__description {
+      margin-bottom: 19px;
+
+      @include font(14px, 22.4px, 400);
+    }
+    &__subtitle {
+      &::after {
+        top: 425px;
+        right: -189px;
+      }
     }
     &__advantages {
       &-list {
+        position: absolute;
+        bottom: -236px;
+        left: 350px;
+
+        flex-direction: row;
+        padding: 0;
         &::before,
         &::after {
           width: 0;
+        }
+      }
+      &-item {
+        width: 407px;
+        min-height: 234px;
+        padding: 39px 43px 40px 124px;
+        &:nth-child(1) {
+          border: 2px solid $second-background;
+          border-right: 0;
+        }
+        &:nth-child(2) {
+          border: 2px solid $second-background;
+          border-right: 0;
+        }
+        &:nth-child(3) {
+          border: 2px solid $second-background;
+        }
+        &::before {
+          top: 55px;
+          left: 33px;
+        }
+        &::after {
+          left: 27px;
         }
       }
     }

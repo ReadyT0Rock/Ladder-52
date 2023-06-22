@@ -117,6 +117,8 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
+    min-height: 721px;
+    margin-bottom: 109px;
     &__bg-decorate {
       width: $desktop-width;
       &::before {
@@ -124,8 +126,148 @@
       }
     }
     &__container {
+      position: relative;
+
       width: $desktop-width;
-      padding: 110px 351px 0 351px;
+      min-height: 481px;
+      padding: 110px 351px 130px 351px;
+      &::after {
+        right: 1414px;
+        bottom: 104px;
+
+        background: url('../img/decorate-5.svg');
+      }
     }
+    &__title {
+      width: 380px;
+      margin-bottom: 40px;
+
+      @include font(36px, 43.2px, 700);
+      &::after {
+        right: 155px;
+        top: 308px;
+      }
+    }
+    &__wrapper {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '';
+        top: -48px;
+        right: -47px;
+
+        width: 96px;
+        height: 96px;
+
+        background: url('../img/decorate-1.svg') no-repeat;
+      }
+    }
+    &__wrapper-btn {
+      display: flex;
+      position: absolute;
+      z-index: 2;
+      top: 10px;
+      right: 189px;
+
+      display: flex;
+      margin-right: -64px;
+      padding-top: 3px;
+      &::before {
+        position: absolute;
+        content: '';
+        top: 38%;
+        left: 50%;
+
+        width: 2px;
+        height: 34px;
+
+        background-color: #000000;
+      }
+    }
+    &__btn {
+      position: relative;
+
+      width: 104px;
+      height: 130px;
+      padding: 0;
+
+      background-color: transparent;
+      border: 0;
+        &::before {
+          position: absolute;
+          content: '';
+          top: 46%;
+          left: 61%;
+
+          width: 12px;
+          height: 2px;
+
+          background-color: $second-color-bg;
+          transform: rotate(-45deg);
+        }
+        &::after {
+          position: absolute;
+          content: '';
+          top: 52%;
+          left: 61%;
+
+          width: 12px;
+          height: 2px;
+
+          background-color: $second-color-bg;
+          transform: rotate(45deg);
+        }
+    &--next {
+      &::before {
+        top: 51%;
+        left: 31%;
+      }
+      &::after {
+        top: 45%;
+        left: 31%;
+      }
+    }
+    &:hover::before,
+    &:hover::after {
+      background-color: $main-color-bg-button;
+    }
+    &:active::before,
+    &:active::after {
+      opacity: 0.5;
+    }
+  }
+  &__list {
+    position: relative;
+
+    width: 902px;
+    margin-left: 207px;
+    margin-bottom: 0;
+  }
+  &__item {
+    display: flex;
+    width: 902px;
+    min-height: 355px;
+    padding: 62px 141px 93px 80px;
+    & img {
+      float: none;
+      margin-right: 40px;
+    }
+  }
+  &__content {
+    & > div {
+      min-height: 0;
+      padding-top: 0;
+      margin-bottom: 16px;
+    }
+    & cite {
+      width: 250px;
+      margin-bottom: 3px;
+    }
+    & p {
+      margin-bottom: 14px;
+
+      @include font(14px, 23.8px, 400);
+    }
+  }
   }
 }
