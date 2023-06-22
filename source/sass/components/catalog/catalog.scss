@@ -1,0 +1,12 @@
+.catalog {
+
+}
+
+.type-ladder {
+  &__list {
+    &--catalog {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
