@@ -1,7 +1,8 @@
 .winder-ladder {
   min-height: 1458px;
+  margin-bottom: 80px;
 
-  background-color: $second-background;
+  background-color: #ffffff;
   &__bg-decorate {
     position: relative;
 
@@ -49,14 +50,80 @@
     position: relative;
 
     min-height: 370px;
+    margin-bottom: 40px;
   }
   &__img {
     position: absolute;
     top: 0;
     left: -20px;
   }
+  &__wrapper-inner {
+    margin-bottom: 61px;
+  }
   &__subtitle {
+    position: relative;
+    margin-bottom: 33px;
 
+    @include font(23px, 1.6, 600);
+    &::after {
+      position: absolute;
+      content: '';
+      top: 45px;
+      left: 0;
+
+      width: 70px;
+      height: 3px;
+
+      background-color: $second-color-text;
+    }
+  }
+  &__price {
+    margin-bottom: 20px;
+
+    @include font(14px, 1.4, 400);
+    & b {
+      padding: 0 5px;
+
+      @include font(23px, 1.6, 600);
+    }
+  }
+  &__text {
+    margin-bottom: 30px;
+
+    @include font(12px, 1.4, 400);
+    color: rgba(32, 32, 32, 0.4);
+  }
+  &__days {
+    margin-bottom: 30px;
+
+    @include font(14px, 1.4, 400);
+    & b {
+      margin-left: 12px;
+
+      @include font(18px, 1.4, 600);
+    }
+  }
+  &__btn {
+    width: 225px;
+    min-height: 50px;
+    padding: 15px 52px;
+    margin-bottom: 40px;
+
+    @include font(14px, 1.4, 500);
+  }
+  &__description {
+    @include font(12px, 1.6, 400);
+    &:last-child {
+      margin-top: 18px;
+    }
+  }
+  &__list {
+    padding: 17px 0 21px 14px;
+
+    list-style: disc;
+    p {
+      @include font(12px, 1.4, 400);
+    }
   }
   &__wrapper-calculate {
     width: 380px;
