@@ -21,6 +21,7 @@
   }
   &__text {
     margin-bottom: 10px;
+    padding-left: 20px;
 
     @include font(14px, 22.4px, 400);
   }
@@ -115,6 +116,7 @@
     &__text {
       width: 386px;
       margin-bottom: 25px;
+      padding-left: 0;
 
       @include font(14px, 22.4px, 400);
     }

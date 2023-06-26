@@ -1,6 +1,6 @@
 .contacts {
-  min-height: 450px;
-  margin-bottom: 780px;
+  min-height: 440px;
+  margin-bottom: 860px;
 
   background-color: $second-background;
   &__bg-decorate {
@@ -16,7 +16,7 @@
       right: 320px;
 
       width: 5000px;
-      height: 503px;
+      height: 440px;
 
       background-color: $main-background;
   }
@@ -29,18 +29,126 @@
     margin: 0 auto;
   }
   &__title {
+    z-index: 1;
+    margin-top: 36px;
+    margin-bottom: 56px;
+
     @include font(29px, 0.2, 700);
     &::before {
-      z-index: 1;
+      bottom: -13px;
+      left: -20px;
+
+      background-color: #ff9646;
     }
+    &::after {
+      position: absolute;
+      content: '';
+      top: -17px;
+      left: 304px;
+
+      width: 96px;
+      height: 96px;
+
+      background: url('../img/decorate-1.svg') no-repeat;
+    }
+  }
+  &__wrapper {
+    position: absolute;
   }
   &__wrapper-map {
     position: relative;
+    z-index: 2;
+
+    margin-bottom: 80px;
     & img {
       position: absolute;
     }
     & iframe {
       border: 0;
+    }
+  }
+  &__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #ffffff;
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      z-index: -1;
+
+      width: 96px;
+      height: 96px;
+
+      background: url('../img/decorate-1.svg') no-repeat;
+    }
+    &::before {
+      top: -75px;
+      right: 34px;
+    }
+    &::after {
+      bottom: -25px;
+      left: -17px;
+    }
+  }
+  &__item {
+    position: relative;
+
+    width: 380px;
+    min-height: 180px;
+    padding: 67px 5px 30px 131px;
+
+    border: 2px solid #f4f4f4;
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+    & h2 {
+      margin-bottom: 6px;
+
+      @include font(14px, 0.7, 400);
+    }
+    & a {
+      @include font(18px, 1.6, 600);
+      color: #4b4b4b;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+    }
+    & address,
+    & span {
+      @include font(14px, 1.6, 600);
+      color: #4b4b4b;
+      font-style: normal;
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      top: 50px;
+      left: 37px;
+
+      width: 21px;
+      height: 80px;
+
+      background-color: $main-color-decorate;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      top: 60px;
+      left: 40px;
+
+      width: 60px;
+      height: 60px;
+    }
+    &:nth-child(1)::after {
+      background: url('../img/contacts/phone.svg') no-repeat;
+    }
+    &:nth-child(2)::after {
+      background: url('../img/contacts/map.svg') no-repeat;
+    }
+    &:nth-child(3)::after {
+      background: url('../img/contacts/email.svg') no-repeat;
     }
   }
 }
@@ -65,11 +173,22 @@
         background: url('../img/decorate-1.svg');
       }
     }
+    &__title {
+      &::after {
+        display: none;
+      }
+    }
     &__wrapper-map {
       position: relative;
       & iframe {
         width: 1218px;
         height: 681px;
+      }
+    }
+    &__list {
+      &::before,
+      &::after {
+        display: none;
       }
     }
   }
