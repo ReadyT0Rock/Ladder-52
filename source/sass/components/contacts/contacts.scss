@@ -155,12 +155,14 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
+    min-height: 612px;
+    margin-bottom: 585px;
     &__bg-decorate {
       width: $desktop-width;
       &::before {
         right: 1183px;
 
-        height: 701px;
+        height: 612px;
       }
     }
     &__container {
@@ -174,21 +176,36 @@
       }
     }
     &__title {
+      margin-top: 29px;
+
+      font-size: 36px;
+      &::before {
+        left: -39px;
+      }
       &::after {
         display: none;
       }
     }
     &__wrapper-map {
       position: relative;
+
+      margin-bottom: 75px;
       & iframe {
         width: 1218px;
         height: 681px;
       }
     }
     &__list {
+      flex-direction: row;
       &::before,
       &::after {
         display: none;
+      }
+    }
+    &__item {
+      &:not(:last-child) {
+        border-bottom: 2px solid #f4f4f4;
+        border-right: none;
       }
     }
   }
