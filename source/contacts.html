@@ -40,10 +40,10 @@
               <a class='navigation__link' href='company.html'>О компании</a>
             </li>
             <li class='navigation__item'>
-              <a class='navigation__link navigation__link--current'>Каталог</a>
+              <a class='navigation__link' href='catalog.html'>Каталог</a>
             </li>
             <li class='navigation__item'>
-              <a class='navigation__link' href='work-examples.html'>Примеры работ</a>
+              <a class='navigation__link navigation__link--current'>Примеры работ</a>
             </li>
             <li class='navigation__item'>
               <a class='navigation__link' href='blog.html'>Блог</a>
@@ -64,193 +64,42 @@
 
   <main class='main'>
 
-    <section class='catalog'>
-      <div class='catalog__bg-decorate'>
-        <div class='catalog__container'>
+    <section class='contacts'>
+      <div class='contacts__bg-decorate'>
+        <div class='contacts__container'>
           <div class='breadcrumbs'>
             <ul class='breadcrumbs__list'>
               <li class='breadcrumbs__item'>
                 <a class='breadcrumbs__link' href='index.html'>Главная</a>
               </li>
               <li class='breadcrumbs__item'>
-                <a class='breadcrumbs__link breadcrumbs__link--current'>Каталог</a>
+                <a class='breadcrumbs__link breadcrumbs__link--current'>Контакты</a>
               </li>
             </ul>
             <a class='breadcrumbs__link breadcrumbs__link--to-main' href='index.html'>Вернуться на главную</a>
           </div>
-          <h1 class='catalog__title title-decorate title-decorate--catalog'>Типы лестниц</h1>
-          <div class='type-ladder'>
-          <ul class='type-ladder__list type-ladder__list--catalog'>
-            <li class='type-ladder__item'>
-              <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-1.png' srcset='img/index/type-ladder/slider-img-1@2x.png 2x' alt='прямая лестница'>
-              <div class='type-ladder__description'>
-                <h3 class='type-ladder__subtitle'>Прямая лестница</h3>
-                <p class='type-ladder__price'>от <b>18 000 </b>₽ за м. п.</p>
-                <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
-              </div>
+          <h1 class='contacts__title title-decorate'>Контакты</h1>
+          <div class='contacts__wrapper-map'>
+            <picture>
+              <source media='(min-width: 1440px)' srcset='img/contacts/map.jpg 1x, img/contacts/map@2x.jpg 2x' width='1218' height='681'>
+              <img src='img/contacts/map-mobile.jpg' srcset='img/contacts/map-mobile@2x.jpg 2x' width='380' height='470' alt='наше местоположение на карте: г. Нижний Новгород ул. Интернациональная, 100'>
+            </picture>
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=43.948862%2C56.309831&mode=whatshere&whatshere%5Bpoint%5D=43.948351%2C56.310043&whatshere%5Bzoom%5D=17&z=16.4" width="380" height="470" allowfullscreen="" style="position:relative;"></iframe>
+          </div>
+          <ul class='contacts__list'>
+            <li class='contacts__item'>
+              <h2>Телефон:</h2>
+              <a href='tel:+79302835065'>+7 (930) 283-50-65</a>
             </li>
-            <li class='type-ladder__item'>
-              <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-2.png' srcset='img/index/type-ladder/slider-img-2@2x.png 2x' alt='Забежная лестница'>
-              <div class='type-ladder__description'>
-                <h3 class='type-ladder__subtitle'>Забежная лестница</h3>
-                <p class='type-ladder__price'>от <b>27 000</b> ₽ за м. п.</p>
-                <a class='type-ladder__link btn-main-style' href='winder-ladder.html'>Подробнее</a>
-              </div>
+            <li class='contacts__item'>
+              <h2>Адрес:</h2>
+              <address>г. Нижний Новгород ул. Интернациональная, 100</address>
             </li>
-            <li class='type-ladder__item'>
-              <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-3.png' srcset='img/index/type-ladder/slider-img-3@2x.png 2x' alt='Винтовая лестница'>
-              <div class='type-ladder__description'>
-                <h3 class='type-ladder__subtitle'>Винтовая лестница</h3>
-                <p class='type-ladder__price'>от <b>30 000</b> ₽ за м. п.</p>
-                <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
-              </div>
-            </li>
-            <li class='type-ladder__item'>
-              <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-4.png' srcset='img/index/type-ladder/slider-img-4@2x.png 2x' alt='Фасадная лестница'>
-              <div class='type-ladder__description'>
-                <h3 class='type-ladder__subtitle'>Фасадная лестница</h3>
-                <p class='type-ladder__price'>от <b>50 000</b> ₽ за м. п.</p>
-                <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
-              </div>
-            </li>
-            <li class='type-ladder__item'>
-              <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-5.png' srcset='img/index/type-ladder/slider-img-5@2x.png 2x' alt='Зеркальная лестница'>
-              <div class='type-ladder__description'>
-                <h3 class='type-ladder__subtitle'>Зеркальная лестница</h3>
-                <p class='type-ladder__price'>от <b>45 000</b> ₽ за м. п.</p>
-                <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
-              </div>
-            </li>
-            <li class='type-ladder__item'>
-              <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-6.png' srcset='img/index/type-ladder/slider-img-6@2x.png 2x' alt='Индивидуальная лестница'>
-              <div class='type-ladder__description'>
-                <h3 class='type-ladder__subtitle'>Индивидуальная</h3>
-                <p class='type-ladder__price'>Цена договорная</p>
-                <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
-              </div>
+            <li class='contacts__item'>
+              <h2>E-mail:</h2>
+              <span>lest52monolit@gmail.com</span>
             </li>
           </ul>
-        </div>
-        </div>
-      </div>
-    </section>
-
-    <section class='model model--margin'>
-      <div class='model__container model__container--decorate-aboout-company'>
-        <h2 class='model__title'>Получите 3d-визуализацию вашей будущей лестницы бесплатно!</h2>
-        <p class='model__description'>Оставьте свои контактные данные и наш специалист свяжется свами в течении 15 минут!</p>
-        <form class='model__form' action='#' method='post'>
-          <label class='visually-hidden' for='name'>ваше имя</label>
-          <input type='text' id='name' name='name' placeholder='Ваше имя...' required>
-          <label class='visually-hidden' for='phone'>ваш номер телефона</label>
-          <input type='tel' id='phone' name='phone' placeholder='Ваш телефон...' required>
-          <label class='visually-hidden' for='email'>ваша почта</label>
-          <input type='email' id='email' name='email' placeholder='Ваш e-mail...' required>
-          <button class='model__btn btn-main-style' type='submit'>Отправить заявку</button>
-          <strong class='model__footnote'>Нажимая на кнопку вы соглашаетесь  с <a href='#'>политикой конфиденциальности</a></strong>
-        </form>
-      </div>
-    </section>
-
-    <section class='finished-projects'>
-      <div class='finished-projects__container'>
-        <div class='finished-projects__top'>
-        <h2 class='finished-projects__title title-decorate'>Готовые проекты</h2>
-        <div class='finished-projects__wrapper-btn'>
-          <button class='finished-projects__btn finished-projects__btn--back' type='button'>
-            <span class='visually-hidden'>показать предыдущие проекты</span>
-          </button>
-          <button class='finished-projects__btn finished-projects__btn--next' type='button'>
-            <span class='visually-hidden'>показать следующие проекты</span>
-          </button>
-        </div>
-      </div>
-        <ul class='finished-projects__list'>
-          <li class='finished-projects__item'>
-            <img src='img/about-company/finished-projects/slider-photo-1.jpg' srcset='img/about-company/finished-projects/slider-photo-1@2x.jpg 2x' width='380' height='490' alt=''>
-          </li>
-          <li class='finished-projects__item'>
-            <img src='img/about-company/finished-projects/slider-photo-2.jpg' srcset='img/about-company/finished-projects/slider-photo-2@2x.jpg 2x' width='380' height='490' alt=''>
-          </li>
-          <li class='finished-projects__item'>
-            <img src='img/about-company/finished-projects/slider-photo-3.jpg' srcset='img/about-company/finished-projects/slider-photo-1@2x.jpg 2x' width='380' height='490' alt=''>
-          </li>
-        </ul>
-        <ol class='slider-pagination slider-pagination--finished-projects'>
-          <li class='slider-pagination__item slider-pagination__item--current'>
-            <button class='slider-pagination__btn slider-pagination__btn--current' type='button'>
-              <span class='visually-hidden'>фото 1</span>
-            </button>
-          </li>
-          <li class='slider-pagination__item'>
-            <button class='slider-pagination__btn' type='button'>
-              <span class='visually-hidden'>фото 2</span>
-            </button>
-          </li>
-          <li class='slider-pagination__item'>
-            <button class='slider-pagination__btn' type='button'>
-              <span class='visually-hidden'>фото 3</span>
-            </button>
-          </li>
-          <li class='slider-pagination__item'>
-            <button class='slider-pagination__btn' type='button'>
-              <span class='visually-hidden'>фото 4</span>
-            </button>
-          </li>
-        </ol>
-        <a class='finished-projects__link btn-main-style' href='#'>Посмотреть все работы</a>
-      </div>
-    </section>
-
-    <section class='reviews'>
-      <div class='reviews__bg-decorate'>
-        <div class='reviews__container'>
-          <h2 class='reviews__title title-decorate'>Отзывы о нашей работе</h2>
-          <div class='reviews__wrapper'>
-            <div class='reviews__wrapper-btn'>
-              <button class='reviews__btn reviews__btn--back' type='button'>
-                <span class='visually-hidden'>показать предыдущий отзыв</span>
-              </button>
-              <button class='reviews__btn reviews__btn--next' type='button'>
-                <span class='visually-hidden'>показать следующий отзыв</span>
-              </button>
-            </div>
-          <ul class='reviews__list'>
-            <li class='reviews__item'>
-              <img src='img/about-company/reviews/slider-photo-1.jpg' srcset='img/about-company/reviews/slider-photo-1@2x.jpg 2x' width='121' height='150' alt=''>
-              <div class='reviews__content'>
-                <div>
-                  <cite>Сергей Полозов</cite>
-                  <span>Частный дом</span>
-                </div>
-                <p>Добрый день! Хочу поблагодарить за отличную работу. Заказ был выполнен точно в оговоренный срок. Ребята работают грамотно, быстро и профессионально. Учитывают все особенности и пожелания заказчика. Большое спасибо!!!</p>
-                <a href='#'>Читать далее</a>
-              </div>
-            </li>
-          </ul>
-          <ol class='slider-pagination slider-pagination--reviews'>
-            <li class='slider-pagination__item slider-pagination__item--current'>
-              <button class='slider-pagination__btn slider-pagination__btn--current' type='button'>
-                <span class='visually-hidden'>отзыв 1</span>
-              </button>
-            </li>
-            <li class='slider-pagination__item'>
-              <button class='slider-pagination__btn' type='button'>
-                <span class='visually-hidden'>Отзыв 2</span>
-              </button>
-            </li>
-            <li class='slider-pagination__item'>
-              <button class='slider-pagination__btn' type='button'>
-                <span class='visually-hidden'>Отзыв 3</span>
-              </button>
-            </li>
-            <li class='slider-pagination__item'>
-              <button class='slider-pagination__btn' type='button'>
-                <span class='visually-hidden'>Отзыв 4</span>
-              </button>
-            </li>
-          </ol>
-        </div>
         </div>
       </div>
     </section>

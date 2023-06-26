@@ -68,7 +68,7 @@ p {
 }
 
 .btn-main-style {
-  padding: auto 0;   
+  padding: auto 0;
 
   @include font(14px, 20px, 500);
   color: $main-color-text-button;
@@ -77,6 +77,8 @@ p {
   background-color: $main-color-bg-button;
   border: none;
   border-radius: 2px;
+
+  transition: all .2s ease-in-out;
   &:focus-visible {
     box-shadow: 0 0 0 5px #202020;
   }

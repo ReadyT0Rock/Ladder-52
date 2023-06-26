@@ -131,8 +131,12 @@
       margin-left: 10px;
 
       text-align: center;
+      & a {
+        transition: all 0.2s ease-in-out;
+      }
       & a:hover {
-        color: $second-color-text;
+        color: $main-color-text;
+        opacity: 1;
       }
       & a:active {
         color: $main-color-text;

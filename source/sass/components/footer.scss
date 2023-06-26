@@ -86,16 +86,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .social {
-    &__icon {
-      &:hover {
-        opacity: 1;
-      }
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
   .footer {
     min-height: 190px;
     &__container {
@@ -141,7 +131,10 @@
       }
       &-link {
         @include font(14px, 19.6px, 400);
+
+        transition: all .2s ease-in-out;
         &:hover {
+          @include font(14px, 19.6px, 600);
           color: $second-color-text;
         }
         &:active {
@@ -169,8 +162,10 @@
       margin-right: 305px;
     }
     &__link-privacy {
+      transition: all .2s ease-in-out;
       &:hover {
-        color: $second-color-text;
+        text-decoration: underline;
+        text-underline-offset: 3px;
         opacity: 1;
       }
       &:active {
@@ -182,5 +177,11 @@
     order: 3;
     margin: 0;
     margin-left: auto;
+    &__icon {
+      transition: all .3s ease-in-out;
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 }

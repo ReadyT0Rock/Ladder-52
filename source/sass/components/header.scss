@@ -256,6 +256,26 @@
     }
     &__link {
       position: relative;
+
+      transition: all .2s ease-in-out;
+      &--current {
+          color: $second-color-text;
+
+          transition: all .2s ease-in-out;
+        &::after {
+          position: absolute;
+          content: '';
+          top: 20px;
+          left: 50%;
+
+          width: 30px;
+          height: 2px;
+
+          background-color: $second-color-text;
+
+          transform: translateX(-50%) translateY(0);
+        }
+      }
       &:hover {
         color: $second-color-text;
       }
@@ -263,12 +283,14 @@
         position: absolute;
         content: '';
         top: 20px;
-        left: 0;
+        left: 50%;
 
-        width: 100%;
+        width: 30px;
         height: 2px;
 
         background-color: $second-color-text;
+
+        transform: translateX(-50%) translateY(0);
       }
       &--contact-number {
         display: block;
