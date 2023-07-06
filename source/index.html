@@ -82,7 +82,7 @@
         <span class='promo__text'>Всего <b>за 10 дней</b> с гарантией <b>30 лет</b></span>
         <h1 class='promo__title'>Монолитные лестницы «под ключ»</h1>
         <p class='promo__description'>Исполним все ваши мечты о современной и красивой лестнице по минимальной цене, но с максимальным качеством!</p>
-        <a class='promo__link btn-main-style' href='#'>Консультация</a>
+        <button class='promo__btn btn-main-style' type='button'>Консультация</button>
       </div>
       <div class='promo__wrapper-calculate'>
         <span class='promo__text-calculate'>Рассчитайте стоимость вашей лестницы <b>в 3 шага</b></span>
@@ -492,6 +492,39 @@
     </div>
 
   </footer>
+
+  <section class='popup-send-application'>
+    <div class='popup-send-application__wrapper'>
+      <div class='popup-send-application__container'>
+        <div class='popup-send-application__btn-close-wrapper'>
+          <button class='popup-send-application__btn-close' type='button'>
+            <span class='visually-hidden'>закрыть окно</span>
+          </button>
+        </div>
+        <div class='popup-send-application__content popup-send-application__content--opened'>
+          <h1 class='popup-send-application__title title-decorate'>Отправить заявку</h1>
+          <span>на бесплатную консультацию</span>
+          <form class='popup-send-application__form' action='#' method='post'>
+            <span class='popup-send-application__icon popup-send-application__icon--checked'>декоративная иконка корректности правильного ввода</span>
+            <label class='visually-hidden' for='first-name-application'>ваше имя</label>
+            <input type='text' id='first-name-application' name='name' placeholder='Ваше имя...' required>
+            <span class='popup-send-application__icon'>декоративная иконка корректности правильного ввода</span>
+            <label class='visually-hidden' for='tel-application'>ваш номер телефона</label>
+            <input type='tel' id='tel-application' name='phone' placeholder='Ваш телефон...' required>
+            <span class='popup-send-application__icon'>декоративная иконка корректности правильного ввода</span>
+            <label class='visually-hidden' for='email-application'>ваша почта</label>
+            <input type='email' id='email-application' name='email' placeholder='Ваш e-mail...' required>
+            <button class='popup-send-application__btn btn-main-style' type='submit'>Отправить заявку</button>
+            <strong class='popup-send-application__footnote'>Нажимая на кнопку вы соглашаетесь с <a href='#'>политикой конфиденциальности</a></strong>
+          </form>
+        </div>
+        <div class='popup-send-application__wrapper-thanks'>
+          <h2 class='popup-send-application__subtitle title-decorate'>Спасибо!</h2>
+          <span>Заявка успешно отправлена</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src='js/script.js'></script>
 </body>

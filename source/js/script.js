@@ -1,3 +1,4 @@
+/* Открытие, закрытие навигации */
 let burger = document.querySelector('.header__burger');
 let navigation = document.querySelector('.navigation');
 
@@ -18,3 +19,34 @@ if (navigation) {
     }
   }
 }
+
+/* Открытие попапа "Отправить заявку" */
+
+let popupApplication = document.querySelector('.popup-send-application');
+let buttonApplication = document.querySelector('.promo__btn');
+let buttonClosePopup = document.querySelector('.popup-send-application__btn-close');
+
+if (buttonApplication) {
+  buttonApplication.onclick = function () {
+    popupApplication.classList.add('popup-send-application--opened');
+  }
+}
+
+if (popupApplication) {
+  buttonClosePopup.onclick = function () {
+    popupApplication.classList.remove('popup-send-application--opened');
+  }
+}
+
+/* Завка отправлена */
+let contentForm = document.querySelector('.popup-send-application__content');
+let messageThanks = document.querySelector('.popup-send-application__wrapper-thanks');
+let buttonSendApplication = document.querySelector('.popup-send-application__btn');
+
+if (popupApplication) {
+    buttonSendApplication.onclick = function () {
+      contentForm.classList.add('popup-send-application__content--closed');
+      messageThanks.classList.add('popup-send-application__wrapper-thanks--opened');
+    }
+}
+
