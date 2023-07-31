@@ -96,12 +96,12 @@
     &__bg-decorate {
       width: $desktop-width;
       &::before {
-        right: 737px;
+        right: 485px;
       }
     }
     &__container {
       width: $desktop-width;
-      padding: 110px 351px 126px;
+      padding: 110px 100px 126px;
     }
     &__title {
       &::after {

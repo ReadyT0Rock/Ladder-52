@@ -99,13 +99,13 @@
     margin-bottom: 117px;
     &__container {
       width: $desktop-width;
-      padding: 0 351px;
+      padding: 0 100px;
       &::after {
         position: absolute;
         content: '';
 
         bottom: -47px;
-        right: 1620px;
+        right: 1370px;
 
         width: 96px;
         height: 96px;

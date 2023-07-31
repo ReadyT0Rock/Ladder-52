@@ -82,16 +82,16 @@
 @media (min-width: $desktop-width) {
   .about-us {
     min-height: 526px;
-    margin-bottom: 43px;
+    margin-bottom: 40px;
     &__container {
       position: relative;
       width: $desktop-width;
-      padding: 0 351px;
+      padding: 0 100px;
       &::before {
         position: absolute;
         content: '';
         top: -50px;
-        right: 303px;
+        right: 50px;
 
         width: 96px;
         height: 96px;

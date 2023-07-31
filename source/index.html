@@ -13,6 +13,7 @@
   <link rel='icon' href='img/favicons/favicon.png' type='image/png' sizes='32x32'>
   <link rel='apple-touch-icon' href='img/favicons/favicon-apple.png'>
   <link rel='manifest' href='manifest.webmanifest'>
+  <link rel="stylesheet" href='css/swiper-bundle.min.css'>
   <link rel='stylesheet' href='css/style.css'>
 </head>
 
@@ -66,30 +67,32 @@
 
     <section class='promo'>
       <div class='promo__bg-decorate'>
-      <div class='promo__container'>
-      <ul class='promo__list'>
-        <li class='promo__item'>
-          <img class='promo__img promo__img--current' src='img/index/promo/slider-photo-1.jpg' srcset='img/index/promo/slider-photo-1@2x.jpg 2x' width='420' height='260' alt=''>
-        </li>
-        <li class='promo__item'>
-          <img class='promo__img' src='img/index/promo/slider-photo-2.jpg' srcset='img/index/promo/slider-photo-2@2x.jpg 2x' width='420' height='260' alt=''>
-        </li>
-        <li class='promo__item'>
-          <img class='promo__img' src='img/index/promo/slider-photo-3.jpg' srcset='img/index/promo/slider-photo-3@2x.jpg 2x' width='420' height='260' alt=''>
-        </li>
-      </ul>
-      <div class='promo__content'>
-        <span class='promo__text'>Всего <b>за 10 дней</b> с гарантией <b>30 лет</b></span>
-        <h1 class='promo__title'>Монолитные лестницы «под ключ»</h1>
-        <p class='promo__description'>Исполним все ваши мечты о современной и красивой лестнице по минимальной цене, но с максимальным качеством!</p>
-        <button class='promo__btn btn-main-style' type='button'>Консультация</button>
+        <div class='promo__container'>
+          <div class="promo_list promo-slider">
+            <div class="swiper-wrapper">
+              <div class="promo__item swiper-slide">
+                <img class='promo__img promo__img--current' src='img/index/promo/slider-photo-1.jpg' srcset='img/index/promo/slider-photo-1@2x.jpg 2x' width='420' height='260' alt='винтовая лестница бежевого цвета'>
+              </div>
+              <div class="promo__item swiper-slide">
+                <img class='promo__img' src='img/index/promo/slider-photo-2.jpg' srcset='img/index/promo/slider-photo-2@2x.jpg 2x' width='420' height='260' alt='забежная лестница белого цвета, с коричневыми лесенками и пирилами'>
+              </div>
+              <div class="promo__item swiper-slide">
+                <img class='promo__img' src='img/index/promo/slider-photo-3.jpg' srcset='img/index/promo/slider-photo-3@2x.jpg 2x' width='420' height='260' alt='винтовая лестница светло-бежевого цвета, стенки пирил выполнены из стекла'>
+              </div>
+            </div>
+          </div>
+          <div class='promo__content'>
+            <span class='promo__text'>Всего <b>за 10 дней</b> с гарантией <b>30 лет</b></span>
+            <h1 class='promo__title'>Монолитные лестницы «под ключ»</h1>
+            <p class='promo__description'>Исполним все ваши мечты о современной и красивой лестнице по минимальной цене, но с максимальным качеством!</p>
+            <button class='promo__btn btn-main-style' type='button'>Консультация</button>
+          </div>
+          <div class='promo__wrapper-calculate'>
+            <span class='promo__text-calculate'>Рассчитайте стоимость вашей лестницы <b>в 3 шага</b></span>
+            <a class='promo__link-calculate' href='#'>Подробнее</a>
+          </div>
+        </div>
       </div>
-      <div class='promo__wrapper-calculate'>
-        <span class='promo__text-calculate'>Рассчитайте стоимость вашей лестницы <b>в 3 шага</b></span>
-        <a class='promo__link-calculate' href='#'>Подробнее</a>
-      </div>
-    </div>
-  </div>
     </section>
 
     <section class='advantages'>
@@ -116,97 +119,75 @@
       <div class='type-ladder__container'>
         <div class='type-ladder__top'>
           <h2 class='type-ladder__title title-decorate'>Типы лестниц</h2>
-          <div class='type-ladder__wrapper-btn'>
-            <button class='type-ladder__btn type-ladder__btn--back' type='button'>
-              <span class='visually-hidden'>показать предыдущие типы лестниц</span>
-            </button>
-            <button class='type-ladder__btn type-ladder__btn--next' type='button'>
-              <span class='visually-hidden'>показать следующие типы лестниц</span>
-            </button>
+          <div class="swiper" style='--swiper-pagination-bullet-vertical-gap: 6px;'>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-1.png' srcset='img/index/type-ladder/slider-img-1@2x.png 2x' alt='прямая лестница'>
+                <div class='type-ladder__description'>
+                  <h3 class='type-ladder__subtitle'>Прямая лестница</h3>
+                  <p class='type-ladder__price'>от <b>18 000 </b>₽ за м. п.</p>
+                  <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-2.png' srcset='img/index/type-ladder/slider-img-2@2x.png 2x' alt='Забежная лестница'>
+                <div class='type-ladder__description'>
+                  <h3 class='type-ladder__subtitle'>Забежная лестница</h3>
+                  <p class='type-ladder__price'>от <b>27 000</b> ₽ за м. п.</p>
+                  <a class='type-ladder__link btn-main-style' href='winder-ladder.html'>Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-3.png' srcset='img/index/type-ladder/slider-img-3@2x.png 2x' alt='Винтовая лестница'>
+                <div class='type-ladder__description'>
+                  <h3 class='type-ladder__subtitle'>Винтовая лестница</h3>
+                  <p class='type-ladder__price'>от <b>30 000</b> ₽ за м. п.</p>
+                  <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-4.png' srcset='img/index/type-ladder/slider-img-4@2x.png 2x' alt='Фасадная лестница'>
+                <div class='type-ladder__description'>
+                  <h3 class='type-ladder__subtitle'>Фасадная лестница</h3>
+                  <p class='type-ladder__price'>от <b>50 000</b> ₽ за м. п.</p>
+                  <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-5.png' srcset='img/index/type-ladder/slider-img-5@2x.png 2x' alt='Зеркальная лестница'>
+                <div class='type-ladder__description'>
+                  <h3 class='type-ladder__subtitle'>Зеркальная лестница</h3>
+                  <p class='type-ladder__price'>от <b>45 000</b> ₽ за м. п.</p>
+                  <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-6.png' srcset='img/index/type-ladder/slider-img-6@2x.jpg 2x' alt='Индивидуальная лестница'>
+                <div class='type-ladder__description'>
+                  <h3 class='type-ladder__subtitle'>Индивидуальная</h3>
+                  <p class='type-ladder__price'>Цена договорная</p>
+                  <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+              <span class='swiper-pagination-bullet swiper-pagination-active' aria-label='Перейти на слайд 1' role='button' tabindex='0' aria-current='true'></span>
+              <span class='swiper-pagination-bullet' aria-label='Перейти на слайд 2' role='button' tabindex='0'></span>
+              <span class='swiper-pagination-bullet' aria-label='Перейти на слайд 3' role='button' tabindex='0'></span>
+              <span class='swiper-pagination-bullet' aria-label='Перейти на слайд 4' role='button' tabindex='0'></span>
+              <span class='swiper-pagination-bullet' aria-label='Перейти на слайд 5' role='button' tabindex='0'></span>
+              <span class='swiper-pagination-bullet' aria-label='Перейти на слайд 6' role='button' tabindex='0'></span>
+            </div>
+            <div class='type-ladder__wrapper-btn'>
+              <button class='swiper-button-prev type-ladder__btn type-ladder__btn--back' type='button'>
+                <span class='visually-hidden'>показать предыдущие типы лестниц</span>
+              </button>
+              <button class='swiper-button-next type-ladder__btn type-ladder__btn--next' type='button'>
+                <span class='visually-hidden'>показать следующие типы лестниц</span>
+              </button>
+            </div>
           </div>
-        </div>
-        <ul class='type-ladder__list'>
-          <li class='type-ladder__item'>
-            <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-1.png' srcset='img/index/type-ladder/slider-img-1@2x.png 2x' alt='прямая лестница'>
-            <div class='type-ladder__description'>
-              <h3 class='type-ladder__subtitle'>Прямая лестница</h3>
-              <p class='type-ladder__price'>от <b>18 000 </b>₽ за м. п.</p>
-              <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
-            </div>
-          </li>
-          <li class='type-ladder__item'>
-            <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-2.png' srcset='img/index/type-ladder/slider-img-2@2x.png 2x' alt='Забежная лестница'>
-            <div class='type-ladder__description'>
-              <h3 class='type-ladder__subtitle'>Забежная лестница</h3>
-              <p class='type-ladder__price'>от <b>27 000</b> ₽ за м. п.</p>
-              <a class='type-ladder__link btn-main-style' href='winder-ladder.html'>Подробнее</a>
-            </div>
-          </li>
-          <li class='type-ladder__item'>
-            <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-3.png' srcset='img/index/type-ladder/slider-img-3@2x.png 2x' alt='Винтовая лестница'>
-            <div class='type-ladder__description'>
-              <h3 class='type-ladder__subtitle'>Винтовая лестница</h3>
-              <p class='type-ladder__price'>от <b>30 000</b> ₽ за м. п.</p>
-              <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
-            </div>
-          </li>
-          <li class='type-ladder__item'>
-            <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-4.png' srcset='img/index/type-ladder/slider-img-4@2x.png 2x' alt='Фасадная лестница'>
-            <div class='type-ladder__description'>
-              <h3 class='type-ladder__subtitle'>Фасадная лестница</h3>
-              <p class='type-ladder__price'>от <b>50 000</b> ₽ за м. п.</p>
-              <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
-            </div>
-          </li>
-          <li class='type-ladder__item'>
-            <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-5.png' srcset='img/index/type-ladder/slider-img-5@2x.png 2x' alt='Зеркальная лестница'>
-            <div class='type-ladder__description'>
-              <h3 class='type-ladder__subtitle'>Зеркальная лестница</h3>
-              <p class='type-ladder__price'>от <b>45 000</b> ₽ за м. п.</p>
-              <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
-            </div>
-          </li>
-          <li class='type-ladder__item'>
-            <img class='type-ladder__img' width='294' height='270' src='img/index/type-ladder/slider-img-6.jpg' srcset='img/index/type-ladder/slider-img-6@2x.jpg 2x' alt='Индивидуальная лестница'>
-            <div class='type-ladder__description'>
-              <h3 class='type-ladder__subtitle'>Индивидуальная</h3>
-              <p class='type-ladder__price'>Цена договорная</p>
-              <a class='type-ladder__link btn-main-style' href='#'>Подробнее</a>
-            </div>
-          </li>
-        </ul>
-        <ol class='slider-pagination slider-pagination--type-ladder'>
-          <li class='slider-pagination__item slider-pagination__item--current'>
-            <button class='slider-pagination__btn slider-pagination__btn--current' type='button'>
-              <span class='visually-hidden'>1 тип лестниц</span>
-            </button>
-          </li>
-          <li class='slider-pagination__item'>
-            <button class='slider-pagination__btn' type='button'>
-              <span class='visually-hidden'>2 тип лестниц</span>
-            </button>
-          </li>
-          <li class='slider-pagination__item'>
-            <button class='slider-pagination__btn' type='button'>
-              <span class='visually-hidden'>3 тип лестниц</span>
-            </button>
-          </li>
-          <li class='slider-pagination__item'>
-            <button class='slider-pagination__btn' type='button'>
-              <span class='visually-hidden'>4 тип лестниц</span>
-            </button>
-          </li>
-          <li class='slider-pagination__item'>
-            <button class='slider-pagination__btn' type='button'>
-              <span class='visually-hidden'>5 тип лестниц</span>
-            </button>
-          </li>
-          <li class='slider-pagination__item'>
-            <button class='slider-pagination__btn' type='button'>
-              <span class='visually-hidden'>6 тип лестниц</span>
-            </button>
-          </li>
-        </ol>
+      </div>
       </div>
     </section>
 
@@ -222,7 +203,7 @@
           <label class='visually-hidden' for='email'>ваша почта</label>
           <input type='email' id='email' name='email' placeholder='Ваш e-mail...' required>
           <button class='model__btn btn-main-style' type='submit'>Отправить заявку</button>
-          <strong class='model__footnote'>Нажимая на кнопку вы соглашаетесь  с <a href='#'>политикой конфиденциальности</a></strong>
+          <strong class='model__footnote'>Нажимая на кнопку вы соглашаетесь  с <a class='model__privacy' href='#' role='button'>политикой конфиденциальности</a></strong>
         </form>
       </div>
     </section>
@@ -286,49 +267,34 @@
           <a class='examples__link btn-main-style' href=''>Хочу такую лестницу</a>
         </div>
         <div class='examples__right-column'>
-          <ul class='examples__list'>
-            <li class='examples__item examples__item--current'>
-              <img class='examples__img' src='img/index/examples/slider-photo-1.jpg' srcset='img/index/examples/slider-photo-1@x.jpg 2x' width='380' height='490' alt=''>
-            </li>
-            <li class='examples__item'>
-              <img class='examples__img' src='img/index/examples/slider-photo-2.jpg' srcset='img/index/examples/slider-photo-2@x.jpg 2x' width='380' height='490' alt=''>
-            </li>
-            <li class='examples__item'>
-              <img class='examples__img' src='img/index/examples/slider-photo-3.jpg' srcset='img/index/examples/slider-photo-3@x.jpg 2x' width='380' height='490' alt=''>
-            </li>
-          </ul>
-          <div>
-          <div class='examples__wrapper-btn'>
-            <button class='examples__btn examples__btn--back' type='button'>
-              <span class='visually-hidden'>предыдущее фото</span>
-            </button>
-            <button class='examples__btn examples__btn--next' type='button'>
-              <span class='visually-hidden'>следующее фото</span>
-            </button>
+          <div class="examples-slider examples__list">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide examples__item">
+                <img class='examples__img' src='img/index/examples/slider-photo-1.jpg' srcset='img/index/examples/slider-photo-1@x.jpg 2x' width='380' height='490' alt='зеркальная лестница в доме с черновой отделкой'>
+              </div>
+              <div class="swiper-slide examples__item">
+                <img class='examples__img' src='img/index/examples/slider-photo-2.jpg' srcset='img/index/examples/slider-photo-2@x.jpg 2x' width='380' height='490' alt='зеркальная лестница в доме с черновой отделкой'>
+              </div>
+              <div class="swiper-slide examples__item">
+                <img class='examples__img' src='img/index/examples/slider-photo-3.jpg' srcset='img/index/examples/slider-photo-3@x.jpg 2x' width='380' height='490' alt='винтовая лестница с коричневыми ступенями и белыми вставками'>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+              <span class='swiper-pagination-bullet swiper-pagination-active' aria-label='Перейти на слайд 1' role='button' tabindex='0' aria-current='true'></span>
+              <span class='swiper-pagination-bullet' aria-label='Перейти на слайд 2' role='button' tabindex='0'></span>
+              <span class='swiper-pagination-bullet' aria-label='Перейти на слайд 3' role='button' tabindex='0'></span>
+            </div>
+            <div class='examples__wrapper-btn'>
+
+              <button class="swiper-button-prev examples__btn examples__btn--back" type='button'>
+                <span class='visually-hidden'>переключить на предыдущий слайд</span>
+              </button>
+              <button class="swiper-button-next examples__btn examples__btn--next" type='button'>
+                <span class='visually-hidden'>переключить на следующий слайд</span>
+              </button>
+
+            </div>
           </div>
-          <ol class='slider-pagination slider-pagination--examples'>
-            <li class='slider-pagination__item slider-pagination__item--current'>
-              <button class='slider-pagination__btn slider-pagination__btn--current' type='button'>
-                <span class='visually-hidden'>1 фото</span>
-              </button>
-            </li>
-            <li class='slider-pagination__item'>
-              <button class='slider-pagination__btn' type='button'>
-                <span class='visually-hidden'>2 фото</span>
-              </button>
-            </li>
-            <li class='slider-pagination__item'>
-              <button class='slider-pagination__btn' type='button'>
-                <span class='visually-hidden'>3 фото</span>
-              </button>
-            </li>
-            <li class='slider-pagination__item'>
-              <button class='slider-pagination__btn' type='button'>
-                <span class='visually-hidden'>4 фото</span>
-              </button>
-            </li>
-          </ol>
-        </div>
         </div>
       </div>
     </div>
@@ -423,7 +389,7 @@
             <label class='visually-hidden' for='question'>ваша почта</label>
             <textarea id='question' name='question' placeholder='Ваш вопрос...'></textarea>
             <button class='questions__btn btn-main-style' type='submit'>Отправить сообщение</button>
-            <strong class='questions__footnote'>Нажимая на кнопку вы соглашаетесь с <a href='#'>политикой конфиденциальности</a></strong>
+            <strong class='questions__footnote'>Нажимая на кнопку вы соглашаетесь с <a class='questions__privacy' href='#' role='button'>политикой конфиденциальности</a></strong>
           </form>
         </div>
       </div>
@@ -471,7 +437,7 @@
       </div>
       <div class='footer__bottom'>
         <p class='footer__copyright'>© 2020 Все права защищены.</p>
-        <a class='footer__link-privacy' href='#'>Политика конфиденциальности</a>
+        <a class='footer__link-privacy' role='button' href='#'>Политика конфиденциальности</a>
         <ul class='social'>
           <li class='social__item'>
             <a class='social__link' href='https://www.vk.com/Ladder-52' aria-label='Мы в контакте'>
@@ -515,7 +481,7 @@
             <label class='visually-hidden' for='email-application'>ваша почта</label>
             <input type='email' id='email-application' name='email' placeholder='Ваш e-mail...' required>
             <button class='popup-send-application__btn btn-main-style' type='submit'>Отправить заявку</button>
-            <strong class='popup-send-application__footnote'>Нажимая на кнопку вы соглашаетесь с <a href='#'>политикой конфиденциальности</a></strong>
+            <strong class='popup-send-application__footnote'>Нажимая на кнопку вы соглашаетесь с <a class='privacy' href='#'>политикой конфиденциальности</a></strong>
           </form>
         </div>
         <div class='popup-send-application__wrapper-thanks'>
@@ -526,7 +492,69 @@
     </div>
   </section>
 
+  <section class='popup-privacy'>
+    <div class='popup-privacy__wrapper'>
+      <div class='popup-privacy__container'>
+        <div class='popup-privacy__btn-close-wrapper'>
+          <button class='popup-privacy__btn-close' type='button'>
+            <span class='visually-hidden'>закрыть окно</span>
+          </button>
+        </div>
+        <h1 class='popup-privacy__title title-decorate'>Политика конфиденциальности</h1>
+        <p>Пользователь сайта _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ .ru (далее Пользователь) предоставляя свои персональные
+          данные ( р е к в и з и т ы к о м п а н и и а д р е с к о м п а н и и электр. адрес: _ _ _ _@_ _ _ _ _.ru,
+          телефон: 73832887808, далее Продавец) дает согласие на обработку, хранение и использование своих персональных
+          данных на основании ФЗ No 152-ФЗ «О персональных данных» от 27.07.2006 г. в следующих целях:</p>
+        <ul>
+          <li>
+            <p>Регистрации Пользователя на сайте;</p>
+          </li>
+          <li>
+            <p>Осуществление клиентской поддержки;</p>
+          </li>
+          <li>
+            <p>Получения Пользователем информации о маркетинговых событиях;</p>
+          </li>
+          <li>
+            <p>Выполнение Продавцом обязательств перед Покупателем.</p>
+          </li>
+        </ul>
+        <p>Под персональными данными подразумевается любая информация личного характера, позволяющая установить личность
+          Покупателя такая как:</p>
+        <ul>
+          <li>Фамилия, Имя, Отчество;</li>
+          <li>Контактный телефон;</li>
+          <li>Адрес электронной почты;</li>
+          <li>Почтовый адрес.</li>
+        </ul>
+        <p>Персональные данные Покупателей хранятся исключительно на электронных носителях и обрабатываются с
+          использованием автоматизированных систем, за исключением случаев, когда неавтоматизированная обработка
+          персональных данных необходима в связи с исполнением требований законодательства. Продавец обязуется не
+          передавать полученные персональные данные третьим лицам, за исключением следующих случаев:</p>
+        <ul>
+          <li>
+            <p>По запросам уполномоченных органов государственной власти РФ только по основаниям и в порядке,
+              установленным законодательством РФ;</p>
+          </li>
+          <li>
+            <p>Стратегическим партнерам, которые работают с Продавцом для предоставления продуктов и услуг, или тем из
+              них, которые помогают Продавцу реализовывать продукты и услуги потребителям. Мы предоставляем третьим лицам
+              минимальный объем персональных данных, необходимый только для оказания требуемой услуги или проведения
+              необходимой транзакции.</p>
+          </li>
+        </ul>
+        <p> Продавец оставляет за собой право вносить изменения в одностороннем порядке в настоящие правила, при условии,
+          что изменения не противоречат действующему законодательству РФ. Изменения условий настоящих правил вступают в
+          силу после их публикации на Сайте.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <script src='js/swiper-bundle.min.js'></script>
   <script src='js/script.js'></script>
+  <script src='js/promo-slider.js'></script>
+  <script src='js/examples-slider.js'></script>
 </body>
 
 </html>

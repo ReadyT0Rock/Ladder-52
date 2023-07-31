@@ -66,8 +66,11 @@
 
     @include font(13px, 16px, 400);
     color: rgba(32, 32, 32, 0.4);
-    & a {
-      text-decoration: underline;
+    & button {
+      color: rgba(32, 32, 32, 0.4);
+
+      background-color: transparent;
+      border: none;
       &:active {
         color: $main-color-text;
       }
@@ -82,8 +85,8 @@
     &__container {
       display: flex;
       align-items: flex-start;
-      width: $desktop-width;
-      padding: 0 351px 0 220px;
+      width: calc($desktop-width + 62px);
+      padding: 0;
     }
     &__wrapper-map {
       position: relative;
@@ -146,13 +149,11 @@
     }
     // Страница "О компании"
     &__container--background {
-      justify-content: flex-end;
-
       background: url('../img/about-company/questions/background.jpg') no-repeat;
       background-size: 725px 560px;
-      background-position: 219px 0;
+      background-position: 0 0;
       & > div {
-        padding-left: 800px;
+        padding-left: 861px;
       }
     }
   }

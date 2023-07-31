@@ -40,13 +40,10 @@
       background: url('../img/decorate-4.svg') no-repeat;
     }
   }
-  &__wrapper-btn {
-    display: none;
-  }
   &__title {
     margin-bottom: 40px;
-
     @include font(29px, 34.8px, 700);
+
     &::after {
       position: absolute;
       content: '';
@@ -59,11 +56,13 @@
       background: url('../img/decorate-2.svg') no-repeat;
     }
   }
+  & .reviews-slider {
+    overflow: hidden;
+  }
   &__list {
-    position: relative;
-    z-index: 1;
+    margin-bottom: 30px;
 
-    margin-bottom: 22px;
+    box-sizing: border-box;
   }
   &__item {
     width: 380px;
@@ -71,9 +70,7 @@
     padding: 40px 30px;
 
     background-color: $main-color-bg;
-    &:not(:first-child) {
-      display: none;
-    }
+
     & img {
       float: left;
       margin-right: 20px;
@@ -113,6 +110,33 @@
       }
     }
   }
+  &__wrapper-btn {
+    display: none;
+  }
+  & .swiper-pagination {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  & .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+
+    background-color: #f9bb88;
+    opacity: 1;
+
+    border-radius: 0;
+
+    --swiper-pagination-bullet-horizontal-gap: 8px;
+  }
+  .swiper-pagination-bullet-active {
+    width: 17px;
+    height: 17px;
+
+    background-color: #000000;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -122,7 +146,7 @@
     &__bg-decorate {
       width: $desktop-width;
       &::before {
-        right: 738px;
+        right: 490px;
       }
     }
     &__container {
@@ -130,10 +154,10 @@
 
       width: $desktop-width;
       min-height: 481px;
-      padding: 110px 351px 130px 351px;
+      padding: 110px 100px 130px;
       &::after {
-        right: 1414px;
-        bottom: 104px;
+        right: 1143px;
+        bottom: 85px;
 
         background: url('../img/decorate-5.svg');
       }
@@ -148,126 +172,137 @@
         top: 308px;
       }
     }
-    &__wrapper {
-      position: relative;
-      &::after {
-        position: absolute;
-        content: '';
-        top: -48px;
-        right: -47px;
-
-        width: 96px;
-        height: 96px;
-
-        background: url('../img/decorate-1.svg') no-repeat;
+    &__list {
+      width: 902px;
+      margin-bottom: 0;
+    }
+    &__item {
+      display: flex;
+      width: 902px;
+      min-height: 355px;
+      padding: 62px 141px 93px 80px;
+      & img {
+        float: none;
+        margin-right: 40px;
       }
     }
-    &__wrapper-btn {
-      display: flex;
+    &__content {
+      & > div {
+        min-height: 0;
+        padding-top: 0;
+        margin-bottom: 16px;
+      }
+      & cite {
+        width: 250px;
+        margin-bottom: 3px;
+      }
+      & p {
+        margin-bottom: 14px;
+
+        @include font(14px, 23.8px, 400);
+      }
+    }
+    & .reviews-slider {
+      position: relative;
+
+      width: 902px;
+      margin-left: 207px;
+    }
+    & .swiper-pagination {
       position: absolute;
-      z-index: 2;
-      top: 10px;
-      right: 189px;
+      bottom: 45px;
+      left: 234px;
+
+      width: 500px;
+      justify-content: flex-start;
+      height: 20px;
+    }
+    &__wrapper-btn {
+      position: absolute;
+      top: 52px;
+      right: 68px;
 
       display: flex;
-      margin-right: -64px;
-      padding-top: 3px;
+      justify-content: space-between;
+      align-items: start;
+      width: 100px;
+      height: 50px;
       &::before {
         position: absolute;
         content: '';
-        top: 38%;
+        z-index: 1;
         left: 50%;
+        top: 50%;
 
         width: 2px;
         height: 34px;
 
         background-color: #000000;
+
+        transform: translate(-50%, -50%);
       }
     }
     &__btn {
       position: relative;
+      z-index: 1;
 
-      width: 104px;
-      height: 130px;
+      width: 40px;
+      min-height: 50px;
       padding: 0;
 
       background-color: transparent;
       border: 0;
-        &::before {
-          position: absolute;
-          content: '';
-          top: 46%;
-          left: 61%;
-
-          width: 12px;
-          height: 2px;
-
-          background-color: $second-color-bg;
-          transform: rotate(-45deg);
-        }
-        &::after {
-          position: absolute;
-          content: '';
-          top: 52%;
-          left: 61%;
-
-          width: 12px;
-          height: 2px;
-
-          background-color: $second-color-bg;
-          transform: rotate(45deg);
-        }
-    &--next {
       &::before {
-        top: 51%;
-        left: 31%;
+        position: absolute;
+        content: '';
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+
+        width: 12px;
+        height: 2px;
+
+        background-color: $second-color-bg;
+        transform: rotate(-45deg) translate(-50%, -50%);
       }
       &::after {
-        top: 45%;
-        left: 31%;
+        position: absolute;
+        content: '';
+        z-index: 1;
+        top: 49%;
+        left: 47%;
+
+
+        width: 12px;
+        height: 2px;
+
+        background-color: $second-color-bg;
+        transform: rotate(45deg) translate(-50%, -50%);
+      }
+      &--back {
+        transform: rotate(180deg);
+      }
+      &--next {
+        top: 0;
+
+        margin-top: 0;
+        &::before {
+          left: 80%;
+        }
+        &::after {
+          left: 78%;
+        }
+      }
+      &:hover::before,
+      &:hover::after {
+        background-color: $main-color-bg-button;
+      }
+      &:active::before,
+      &:active::after {
+        opacity: 0.5;
       }
     }
-    &:hover::before,
-    &:hover::after {
-      background-color: $main-color-bg-button;
-    }
-    &:active::before,
-    &:active::after {
-      opacity: 0.5;
-    }
-  }
-  &__list {
-    position: relative;
-
-    width: 902px;
-    margin-left: 207px;
-    margin-bottom: 0;
-  }
-  &__item {
-    display: flex;
-    width: 902px;
-    min-height: 355px;
-    padding: 62px 141px 93px 80px;
-    & img {
-      float: none;
-      margin-right: 40px;
-    }
-  }
-  &__content {
-    & > div {
-      min-height: 0;
-      padding-top: 0;
-      margin-bottom: 16px;
-    }
-    & cite {
-      width: 250px;
-      margin-bottom: 3px;
-    }
-    & p {
-      margin-bottom: 14px;
-
-      @include font(14px, 23.8px, 400);
-    }
-  }
   }
 }
+
+
