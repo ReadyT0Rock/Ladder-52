@@ -13,6 +13,7 @@
   <link rel='icon' href='img/favicons/favicon.png' type='image/png' sizes='32x32'>
   <link rel='apple-touch-icon' href='img/favicons/favicon-apple.png'>
   <link rel='manifest' href='manifest.webmanifest'>
+  <link rel="stylesheet" href='css/swiper-bundle.min.css'>
   <link rel='stylesheet' href='css/style.css'>
 </head>
 
@@ -147,7 +148,7 @@
           <label class='visually-hidden' for='email'>ваша почта</label>
           <input type='email' id='email' name='email' placeholder='Ваш e-mail...' required>
           <button class='model__btn btn-main-style' type='submit'>Отправить заявку</button>
-          <strong class='model__footnote'>Нажимая на кнопку вы соглашаетесь  с <a href='#'>политикой конфиденциальности</a></strong>
+          <strong class='model__footnote'>Нажимая на кнопку вы соглашаетесь  с <a class='model__privacy' href='#' role='button'>политикой конфиденциальности</a></strong>
         </form>
       </div>
     </section>
@@ -155,102 +156,102 @@
     <section class='finished-projects'>
       <div class='finished-projects__container'>
         <div class='finished-projects__top'>
-        <h2 class='finished-projects__title title-decorate'>Готовые проекты</h2>
-        <div class='finished-projects__wrapper-btn'>
-          <button class='finished-projects__btn finished-projects__btn--back' type='button'>
-            <span class='visually-hidden'>показать предыдущие проекты</span>
-          </button>
-          <button class='finished-projects__btn finished-projects__btn--next' type='button'>
-            <span class='visually-hidden'>показать следующие проекты</span>
-          </button>
+          <h2 class='finished-projects__title title-decorate'>Готовые проекты</h2>
+          <div class="finished-projects-slider" style='--swiper-pagination-bullet-vertical-gap: 6px;'>
+            <div class="swiper-wrapper finished-projects__list">
+              <div class="swiper-slide finished-projects__item">
+                <img src='img/about-company/finished-projects/slider-photo-1.jpg' srcset='img/about-company/finished-projects/slider-photo-1@2x.jpg 2x' width='380' height='490' alt='зеркальная лестница'>
+              </div>
+              <div class="swiper-slide finished-projects__item">
+                <img src='img/about-company/finished-projects/slider-photo-2.jpg' srcset='img/about-company/finished-projects/slider-photo-2@2x.jpg 2x' width='380' height='490' alt='забежная лестница'>
+              </div>
+              <div class="swiper-slide finished-projects__item">
+                <img src='img/about-company/finished-projects/slider-photo-3.jpg' srcset='img/about-company/finished-projects/slider-photo-3@2x.jpg 2x' width='380' height='490' alt='лесница выполненная по индивидуальному дизайну'>
+              </div>
+              <div class="swiper-slide finished-projects__item">
+                <img src='img/about-company/finished-projects/slider-photo-4.jpg' srcset='img/about-company/finished-projects/slider-photo-4@2x.jpg 2x' width='380' height='490' alt='прямая лестница у входа в дом'>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+              <span class='swiper-pagination-bullet swiper-pagination-active' aria-label='Перейти на слайд 1' role='button' tabindex='0' aria-current='true'></span>
+              <span class='swiper-pagination-bullet' aria-label='Перейти на слайд 2' role='button' tabindex='0'></span>
+              <span class='swiper-pagination-bullet' aria-label='Перейти на слайд 3' role='button' tabindex='0'></span>
+              <span class='swiper-pagination-bullet' aria-label='Перейти на слайд 4' role='button' tabindex='0'></span>
+            </div>
+            <div class='finished-projects__wrapper-btn'>
+              <button class='swiper-button-prev finished-projects__btn finished-projects__btn--back' type='button'>
+                <span class='visually-hidden'>показать следующий слайд</span>
+              </button>
+              <button class='swiper-button-next finished-projects__btn finished-projects__btn--next' type='button'>
+                <span class='visually-hidden'>показать следующий слайд</span>
+              </button>
+            </div>
+          </div>
+          <a class='finished-projects__link btn-main-style' href='#'>Посмотреть все работы</a>
         </div>
-      </div>
-        <ul class='finished-projects__list'>
-          <li class='finished-projects__item'>
-            <img src='img/about-company/finished-projects/slider-photo-1.jpg' srcset='img/about-company/finished-projects/slider-photo-1@2x.jpg 2x' width='380' height='490' alt=''>
-          </li>
-          <li class='finished-projects__item'>
-            <img src='img/about-company/finished-projects/slider-photo-2.jpg' srcset='img/about-company/finished-projects/slider-photo-2@2x.jpg 2x' width='380' height='490' alt=''>
-          </li>
-          <li class='finished-projects__item'>
-            <img src='img/about-company/finished-projects/slider-photo-3.jpg' srcset='img/about-company/finished-projects/slider-photo-1@2x.jpg 2x' width='380' height='490' alt=''>
-          </li>
-        </ul>
-        <ol class='slider-pagination slider-pagination--finished-projects'>
-          <li class='slider-pagination__item slider-pagination__item--current'>
-            <button class='slider-pagination__btn slider-pagination__btn--current' type='button'>
-              <span class='visually-hidden'>фото 1</span>
-            </button>
-          </li>
-          <li class='slider-pagination__item'>
-            <button class='slider-pagination__btn' type='button'>
-              <span class='visually-hidden'>фото 2</span>
-            </button>
-          </li>
-          <li class='slider-pagination__item'>
-            <button class='slider-pagination__btn' type='button'>
-              <span class='visually-hidden'>фото 3</span>
-            </button>
-          </li>
-          <li class='slider-pagination__item'>
-            <button class='slider-pagination__btn' type='button'>
-              <span class='visually-hidden'>фото 4</span>
-            </button>
-          </li>
-        </ol>
-        <a class='finished-projects__link btn-main-style' href='#'>Посмотреть все работы</a>
-      </div>
+      </div>>
     </section>
 
     <section class='reviews'>
       <div class='reviews__bg-decorate'>
         <div class='reviews__container'>
           <h2 class='reviews__title title-decorate'>Отзывы о нашей работе</h2>
-          <div class='reviews__wrapper'>
+          <div class="reviews-slider">
+            <div class="swiper-wrapper reviews__list">
+              <div class="swiper-slide reviews__item">
+                <img src='img/about-company/reviews/slider-photo-1.jpg' srcset='img/about-company/reviews/slider-photo-1@2x.jpg 2x' width='121' height='150' alt='Сергей Полозов'>
+                <div class='reviews__content'>
+                  <div>
+                    <cite>Сергей Полозов</cite>
+                    <span>Частный дом</span>
+                  </div>
+                  <p>Добрый день! Хочу поблагодарить за отличную работу. Заказ был выполнен точно в оговоренный срок. Ребята
+                    работают грамотно, быстро и профессионально. Учитывают все особенности и пожелания заказчика. Большое
+                    спасибо!!!</p>
+                  <a href='#'>Читать далее</a>
+                </div>
+              </div>
+              <div class="swiper-slide reviews__item">
+                <img src='img/about-company/reviews/slider-photo-1.jpg' srcset='img/about-company/reviews/slider-photo-1@2x.jpg 2x' width='121' height='150' alt='Иван Ургант'>
+                <div class='reviews__content'>
+                  <div>
+                    <cite>Иван Ургант</cite>
+                    <span>Квартира</span>
+                  </div>
+                  <p>Добрый день! Хочу поблагодарить за отличную работу. Заказ был выполнен точно в оговоренный срок. Ребята
+                    работают грамотно, быстро и профессионально. Учитывают все особенности и пожелания заказчика. Большое
+                    спасибо!!!</p>
+                  <a href='#'>Читать далее</a>
+                </div>
+              </div>
+              <div class="swiper-slide reviews__item">
+                <img src='img/about-company/reviews/slider-photo-1.jpg' srcset='img/about-company/reviews/slider-photo-1@2x.jpg 2x' width='121' height='150' alt='Билл Гейтс'>
+                <div class='reviews__content'>
+                  <div>
+                    <cite>Билл Гейтс</cite>
+                    <span>Квартира</span>
+                  </div>
+                  <p>Добрый день! Хочу поблагодарить за отличную работу. Заказ был выполнен точно в оговоренный срок. Ребята
+                    работают грамотно, быстро и профессионально. Учитывают все особенности и пожелания заказчика. Большое
+                    спасибо!!!</p>
+                  <a href='#'>Читать далее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+              <span class='swiper-pagination-bullet swiper-pagination-active' aria-label='отзыв 1' role='button' tabindex='0' aria-current='true'></span>
+              <span class='swiper-pagination-bullet' aria-label='Отзыв 2' role='button' tabindex='0'></span>
+              <span class='swiper-pagination-bullet' aria-label='Отзыв 3' role='button' tabindex='0'></span>
+            </div>
             <div class='reviews__wrapper-btn'>
-              <button class='reviews__btn reviews__btn--back' type='button'>
+              <button class='swiper-button-back reviews__btn reviews__btn--back' type='button'>
                 <span class='visually-hidden'>показать предыдущий отзыв</span>
               </button>
-              <button class='reviews__btn reviews__btn--next' type='button'>
+              <button class='swiper-button-next reviews__btn reviews__btn--next' type='button'>
                 <span class='visually-hidden'>показать следующий отзыв</span>
               </button>
             </div>
-          <ul class='reviews__list'>
-            <li class='reviews__item'>
-              <img src='img/about-company/reviews/slider-photo-1.jpg' srcset='img/about-company/reviews/slider-photo-1@2x.jpg 2x' width='121' height='150' alt=''>
-              <div class='reviews__content'>
-                <div>
-                  <cite>Сергей Полозов</cite>
-                  <span>Частный дом</span>
-                </div>
-                <p>Добрый день! Хочу поблагодарить за отличную работу. Заказ был выполнен точно в оговоренный срок. Ребята работают грамотно, быстро и профессионально. Учитывают все особенности и пожелания заказчика. Большое спасибо!!!</p>
-                <a href='#'>Читать далее</a>
-              </div>
-            </li>
-          </ul>
-          <ol class='slider-pagination slider-pagination--reviews'>
-            <li class='slider-pagination__item slider-pagination__item--current'>
-              <button class='slider-pagination__btn slider-pagination__btn--current' type='button'>
-                <span class='visually-hidden'>отзыв 1</span>
-              </button>
-            </li>
-            <li class='slider-pagination__item'>
-              <button class='slider-pagination__btn' type='button'>
-                <span class='visually-hidden'>Отзыв 2</span>
-              </button>
-            </li>
-            <li class='slider-pagination__item'>
-              <button class='slider-pagination__btn' type='button'>
-                <span class='visually-hidden'>Отзыв 3</span>
-              </button>
-            </li>
-            <li class='slider-pagination__item'>
-              <button class='slider-pagination__btn' type='button'>
-                <span class='visually-hidden'>Отзыв 4</span>
-              </button>
-            </li>
-          </ol>
-        </div>
+          </div>
         </div>
       </div>
     </section>
@@ -268,7 +269,7 @@
             <label class='visually-hidden' for='question'>ваша почта</label>
             <textarea id='question' name='question' placeholder='Ваш вопрос...'></textarea>
             <button class='questions__btn btn-main-style' type='submit'>Отправить сообщение</button>
-            <strong class='questions__footnote'>Нажимая на кнопку вы соглашаетесь с <a href='#'>политикой конфиденциальности</a></strong>
+            <strong class='questions__footnote'>Нажимая на кнопку вы соглашаетесь с <a class='questions__privacy' href='#' role='button'>политикой конфиденциальности</a></strong>
           </form>
         </div>
       </div>
@@ -316,7 +317,7 @@
       </div>
       <div class='footer__bottom'>
         <p class='footer__copyright'>© 2020 Все права защищены.</p>
-        <a class='footer__link-privacy' href='#'>Политика конфиденциальности</a>
+        <a class='footer__link-privacy' role='button' href='#'>Политика конфиденциальности</a>
         <ul class='social'>
           <li class='social__item'>
             <a class='social__link' href='https://www.vk.com/Ladder-52' aria-label='Мы в контакте'>
@@ -338,7 +339,68 @@
 
   </footer>
 
+  <section class='popup-privacy'>
+    <div class='popup-privacy__wrapper'>
+      <div class='popup-privacy__container'>
+        <div class='popup-privacy__btn-close-wrapper'>
+          <button class='popup-privacy__btn-close' type='button'>
+            <span class='visually-hidden'>закрыть окно</span>
+          </button>
+        </div>
+        <h1 class='popup-privacy__title title-decorate'>Политика конфиденциальности</h1>
+        <p>Пользователь сайта _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ .ru (далее Пользователь) предоставляя свои персональные
+          данные ( р е к в и з и т ы к о м п а н и и а д р е с к о м п а н и и электр. адрес: _ _ _ _@_ _ _ _ _.ru,
+          телефон: 73832887808, далее Продавец) дает согласие на обработку, хранение и использование своих персональных
+          данных на основании ФЗ No 152-ФЗ «О персональных данных» от 27.07.2006 г. в следующих целях:</p>
+        <ul>
+          <li>
+            <p>Регистрации Пользователя на сайте;</p>
+          </li>
+          <li>
+            <p>Осуществление клиентской поддержки;</p>
+          </li>
+          <li>
+            <p>Получения Пользователем информации о маркетинговых событиях;</p>
+          </li>
+          <li>
+            <p>Выполнение Продавцом обязательств перед Покупателем.</p>
+          </li>
+        </ul>
+        <p>Под персональными данными подразумевается любая информация личного характера, позволяющая установить личность
+          Покупателя такая как:</p>
+        <ul>
+          <li>Фамилия, Имя, Отчество;</li>
+          <li>Контактный телефон;</li>
+          <li>Адрес электронной почты;</li>
+          <li>Почтовый адрес.</li>
+        </ul>
+        <p>Персональные данные Покупателей хранятся исключительно на электронных носителях и обрабатываются с
+          использованием автоматизированных систем, за исключением случаев, когда неавтоматизированная обработка
+          персональных данных необходима в связи с исполнением требований законодательства. Продавец обязуется не
+          передавать полученные персональные данные третьим лицам, за исключением следующих случаев:</p>
+        <ul>
+          <li>
+            <p>По запросам уполномоченных органов государственной власти РФ только по основаниям и в порядке,
+              установленным законодательством РФ;</p>
+          </li>
+          <li>
+            <p>Стратегическим партнерам, которые работают с Продавцом для предоставления продуктов и услуг, или тем из
+              них, которые помогают Продавцу реализовывать продукты и услуги потребителям. Мы предоставляем третьим лицам
+              минимальный объем персональных данных, необходимый только для оказания требуемой услуги или проведения
+              необходимой транзакции.</p>
+          </li>
+        </ul>
+        <p> Продавец оставляет за собой право вносить изменения в одностороннем порядке в настоящие правила, при условии,
+          что изменения не противоречат действующему законодательству РФ. Изменения условий настоящих правил вступают в
+          силу после их публикации на Сайте.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src='js/swiper-bundle.min.js'></script>
   <script src='js/script.js'></script>
+  <script src='js/finished-projects-slider.js'></script>
+  <script src='js/reviews-slider.js'></script>
 </body>
 
 </html>

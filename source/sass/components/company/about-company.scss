@@ -253,16 +253,16 @@
     &__bg-decorate {
       width: $desktop-width;
       &::before {
-        right: 1183px;
+        right: 930px;
 
         height: 701px;
       }
     }
     &__container {
       width: $desktop-width;
-      padding: 14px 351px 0;
+      padding: 14px 100px 0;
       &::before {
-        left: 205px;
+        left: -43px;
         bottom: -287px;
 
         background: url('../img/decorate-1.svg');
@@ -297,7 +297,7 @@
     &__decorate-square {
       left: 0;
 
-      width: 386px;
+      width: 388px;
       height: 374px;
     }
     &__motto {
@@ -318,7 +318,7 @@
       &-list {
         position: absolute;
         bottom: -236px;
-        left: 350px;
+        left: 100px;
 
         flex-direction: row;
         padding: 0;

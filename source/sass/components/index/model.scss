@@ -89,22 +89,22 @@
 @media (min-width: $desktop-width) {
   .model {
     min-height: 545px;
-    margin-bottom: 120px;
+    margin-bottom: 124px;
     &--margin {
       margin-bottom: 109px;
     }
     &__container {
       width: $desktop-width;
-      padding: 66px 351px  80px 351px;
+      padding: 66px 100px  80px 100px;
       &::after {
         bottom: 271px;
-        right: 1457px;
+        right: 1205px;
       }
       &::before {
         position: absolute;
         content: '';
         bottom: 246px;
-        right: 1560px;
+        right: 1308px;
 
         width: 160px;
         height: 160px;

@@ -39,11 +39,11 @@
       background: url('../img/decorate-1.svg') no-repeat;
     }
   }
+  &__list {
+    width: 420px;
+  }
   &__img {
     margin-bottom: 31px;
-  }
-  &__img:not(.promo__img--current) {
-    display: none;
   }
   &__content {
     width: 280px;
@@ -122,17 +122,27 @@
     &__bg-decorate {
       width: $desktop-width;
       &::before {
-        right: 1183px;
+        right: 1034px;
       }
     }
     &__container {
       display: flex;
+      min-width: 0;
       width: $desktop-width;
-      padding: 0 351px 0 220px;
+      padding: 0;
+      margin-left: -30px;
       &::after {
         bottom: -305px;
-        right: 199px;
+        right: 80px;
       }
+    }
+    & .swiper-wrapper {
+      width: 859px;
+    }
+    & .swiper-horizontal {
+      width: 859px;
+
+      overflow: hidden;
     }
     &__img {
       width: 859px;
@@ -149,6 +159,7 @@
       @include font(45px, 54px, 700);
       letter-spacing: 1px;
       &::after {
+        z-index: 1;
         bottom: -33px;
         left: -272px;
 
@@ -162,8 +173,8 @@
       @include font(14px, 22px, 400);
     }
     &__wrapper-calculate {
-      left: 633px;
-      bottom: -183px;
+      left: 413px;
+      bottom: -182px;
 
       width: 446px;
       height: 220px;
