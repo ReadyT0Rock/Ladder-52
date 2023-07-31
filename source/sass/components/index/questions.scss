@@ -149,7 +149,8 @@
     }
     // Страница "О компании"
     &__container--background {
-      background: url('../img/about-company/questions/background.jpg') no-repeat;
+      background-image: image-set('../img/about-company/questions/background.jpg' 1x, '../img/about-company/questions/background@2x.jpg' 2x);
+      background-repeat: no-repeat;
       background-size: 725px 560px;
       background-position: 0 0;
       & > div {
