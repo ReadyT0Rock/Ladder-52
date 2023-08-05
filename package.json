@@ -1,7 +1,7 @@
 {
   "name": "site-for-portfolio",
   "private": true,
-  "description": "Тур на Камчатку",
+  "description": "Проектирование и создание монолитных лестниц под ключ",
   "author": "Vidrin Egor Olegovich",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.0",
